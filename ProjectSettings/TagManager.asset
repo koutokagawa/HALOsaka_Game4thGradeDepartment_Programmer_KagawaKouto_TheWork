@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - ground
+  - pageedgeright
+  - pageedgeleft
+  - page
+  - book
+  - pageL
+  - pageR
+  - bookL
+  - bookR
+  - pagehit2
+  - page1
+  - page2
+  - page3
+  - CenterHit
+  - bookL2
+  - bookR2
+  - moveObjHitL
+  - moveObjHitR
+  - RespawnHit
+  - bookUnderHit
+  - flame
+  - bookhitL
+  - bookhitR
+  - pagehit2_page1
+  - pagehit2_page2
+  - pagehit2_page3
+  - page1_HitL
+  - page1_hitR
+  - page2_HitL
+  - page2_HitR
+  - page3_HitL
+  - page3_HitR
+  - moveLine
+  - Block_min
+  - Nowfloat
+  - water
+  - Block_mid
+  - Block_lar
+  - block_XL
+  - Undefined
+  - Uptag_min
+  - Uptag_mid
+  - Uptag_lar
+  - Uptag_XL
+  - Bard_1
+  - Bard_2
+  - Bard_3
+  - moveobj
+  - lockObj
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Volume
+  - uzu
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
