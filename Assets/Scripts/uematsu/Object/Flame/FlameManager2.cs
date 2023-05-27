@@ -38,7 +38,7 @@ public class FlameManager2 : MonoBehaviour
             {
                 if (other.gameObject.tag == "bookL2")
                 {
-                    ReObj.gameObject.SetActive(true);
+                    ReObj.gameObject.SetActive(false);
                     hit = true;
                 }
             }
@@ -47,7 +47,7 @@ public class FlameManager2 : MonoBehaviour
             {
                 if (other.gameObject.tag == "pagehit2_page1" || other.gameObject.tag == "bookL2")
                 {
-                    ReObj.gameObject.SetActive(true);
+                    ReObj.gameObject.SetActive(false);
                     hit = true;
                 }
             }
@@ -56,7 +56,7 @@ public class FlameManager2 : MonoBehaviour
             {
                 if (other.gameObject.tag == "pagehit2_page2" || other.gameObject.tag == "bookL2")
                 {
-                    ReObj.gameObject.SetActive(true);
+                    ReObj.gameObject.SetActive(false);
                     hit = true;
                 }
             }
@@ -65,7 +65,7 @@ public class FlameManager2 : MonoBehaviour
             {
                 if (other.gameObject.tag == "pagehit2_page3" || other.gameObject.tag == "bookL2")
                 {
-                    ReObj.gameObject.SetActive(true);
+                    ReObj.gameObject.SetActive(false);
                     hit = true;
                 }
             }
@@ -77,7 +77,7 @@ public class FlameManager2 : MonoBehaviour
             {
                 if (other.gameObject.tag == "pagehit2_page2" || other.gameObject.tag == "bookR2")
                 {
-                    ReObj.gameObject.SetActive(true);
+                    ReObj.gameObject.SetActive(false);
                     hit = true;
                 }
             }
@@ -86,7 +86,7 @@ public class FlameManager2 : MonoBehaviour
             {
                 if (other.gameObject.tag == "pagehit2_page3" || other.gameObject.tag == "bookR2")
                 {
-                    ReObj.gameObject.SetActive(true);
+                    ReObj.gameObject.SetActive(false);
                     hit = true;
                 }
             }
@@ -95,7 +95,7 @@ public class FlameManager2 : MonoBehaviour
             {
                 if (other.gameObject.tag == "pagehit2_page4" || other.gameObject.tag == "bookR2")
                 {
-                    ReObj.gameObject.SetActive(true);
+                    ReObj.gameObject.SetActive(false);
                     hit = true;
                 }
             }
@@ -104,15 +104,10 @@ public class FlameManager2 : MonoBehaviour
             {
                 if (other.gameObject.tag == "bookR2")
                 {
-                    ReObj.gameObject.SetActive(true);
+                    ReObj.gameObject.SetActive(false);
                     hit = true;
                 }
             }
-        }
-
-        if (other.gameObject.tag == "bookUnderHit")
-        {
-            ReObj.gameObject.SetActive(false);
         }
     }
 
@@ -122,13 +117,9 @@ public class FlameManager2 : MonoBehaviour
         {
             if (Page1 == true)
             {
-                if (other.gameObject.tag == "bookL2")
-                {
-                    hit = false;
-                }
-
                 if (other.gameObject.tag == "pagehit2_page2" || other.gameObject.tag == "bookL2")
                 {
+                    ReObj.gameObject.SetActive(true);
                     hit = false;
                 }
             }
@@ -137,6 +128,7 @@ public class FlameManager2 : MonoBehaviour
             {
                 if (other.gameObject.tag == "pagehit2_page1" || other.gameObject.tag == "bookL2")
                 {
+                    ReObj.gameObject.SetActive(true);
                     hit = false;
                 }
             }
@@ -145,6 +137,7 @@ public class FlameManager2 : MonoBehaviour
             {
                 if (other.gameObject.tag == "pagehit2_page2" || other.gameObject.tag == "bookL2")
                 {
+                    ReObj.gameObject.SetActive(true);
                     hit = false;
                 }
             }
@@ -153,6 +146,8 @@ public class FlameManager2 : MonoBehaviour
             {
                 if (other.gameObject.tag == "pagehit2_page3" || other.gameObject.tag == "bookL2")
                 {
+                    ReObj.gameObject.SetActive(true);
+
                     hit = false;
                 }
             }
@@ -164,6 +159,8 @@ public class FlameManager2 : MonoBehaviour
             {
                 if (other.gameObject.tag == "pagehit2_page2" || other.gameObject.tag == "bookR2")
                 {
+                    ReObj.gameObject.SetActive(true);
+
                     hit = false;
                 }
             }
@@ -172,30 +169,31 @@ public class FlameManager2 : MonoBehaviour
             {
                 if (other.gameObject.tag == "pagehit2_page3" || other.gameObject.tag == "bookR2")
                 {
+                    ReObj.gameObject.SetActive(true);
+
                     hit = false;
                 }
             }
 
             if (Page3 == true)
             {
-                if (other.gameObject.tag == "pagehit2_page2" || other.gameObject.tag == "bookR2")
+                if (other.gameObject.tag == "pagehit2_page4" || other.gameObject.tag == "bookR2")
                 {
+                    ReObj.gameObject.SetActive(true);
+
                     hit = false;
                 }
             }
 
             if (Page4 == true)
             {
-                if (other.gameObject.tag == "pagehit2_page3" || other.gameObject.tag == "bookR2")
+                if (other.gameObject.tag == "bookR2")
                 {
+                    ReObj.gameObject.SetActive(true);
+
                     hit = false;
                 }
             }
-        }
-
-        if (other.gameObject.tag == "bookUnderHit")
-        {
-            ReObj.gameObject.SetActive(false);
         }
     }
 
@@ -213,14 +211,14 @@ public class FlameManager2 : MonoBehaviour
             if (hit == false)
             {
                 // âäÇ…ìñÇΩÇ¡ÇΩÇÁè¡Ç∑
-                if (script.hit == true)
-                {
-                    ReObj.gameObject.SetActive(false);
-                }
-                else
-                {
-                    ReObj.gameObject.SetActive(true);
-                }
+                //if (script.hit == true)
+                //{
+                //    ReObj.gameObject.SetActive(false);
+                //}
+                //else
+                //{
+                //    ReObj.gameObject.SetActive(true);
+                //}
 
                 var rb = ReObj.GetComponent<Rigidbody>();
                 float RstickX = Input.GetAxis("RstickX");

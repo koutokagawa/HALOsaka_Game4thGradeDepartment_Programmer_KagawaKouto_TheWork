@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2149925758998628888}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.04, y: 5.006, z: 0.03}
+  m_LocalPosition: {x: -0.04, y: 6.05, z: 0.03}
   m_LocalScale: {x: 0.31158218, y: 0.3830229, z: 0.26260212}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -136,7 +136,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3084419672084455643}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -8.452131, z: 0}
+  m_LocalPosition: {x: 0, y: -11, z: 0}
   m_LocalScale: {x: 3.2094302, y: 2.61081, z: 3.80804}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -187,8 +187,9 @@ GameObject:
   - component: {fileID: 3386505023586879563}
   - component: {fileID: 5407402177543468213}
   - component: {fileID: 8633627999758115023}
-  - component: {fileID: 6155795513714355915}
+  - component: {fileID: 5047803320812993360}
   - component: {fileID: 5343584705081255335}
+  - component: {fileID: 5979561278306898245}
   m_Layer: 0
   m_Name: yatai_02
   m_TagString: Untagged
@@ -290,16 +291,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 56
   m_CollisionDetection: 0
---- !u!114 &6155795513714355915
+--- !u!114 &5047803320812993360
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3548755968882120965}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9039eaaae7c5a94c8f2359cb7c4cb72, type: 3}
+  m_Script: {fileID: 11500000, guid: 8498b1d1f6df9eb4797c418c2d322fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
@@ -322,6 +323,22 @@ MonoBehaviour:
   ObjectPosL: 0
   ObjectPosR: 0
   flameHit: 0
+--- !u!114 &5979561278306898245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3548755968882120965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 232243f00631ef9459c9aa5db43d9885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 0}
+  ObjectPosL: 0
+  ObjectPosR: 0
+  flameHit: 0
 --- !u!1 &4976284625441864726
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,6 +352,7 @@ GameObject:
   - component: {fileID: 8020593294797226156}
   - component: {fileID: 8285622812973405725}
   - component: {fileID: 8437557792995671957}
+  - component: {fileID: 31163275406647381}
   m_Layer: 0
   m_Name: yatai_02
   m_TagString: Untagged
@@ -402,7 +420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 0}
   ReObj: {fileID: 3548755968882120965}
-  script: {fileID: 6155795513714355915}
+  script: {fileID: 0}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
@@ -424,7 +442,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 0}
   ReObj: {fileID: 3548755968882120965}
-  script: {fileID: 6155795513714355915}
+  script: {fileID: 5047803320812993360}
+  ObjectPosL: 0
+  ObjectPosR: 0
+  Page1: 0
+  Page2: 0
+  Page3: 0
+  Page4: 0
+  hit: 0
+--- !u!114 &31163275406647381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4976284625441864726}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8122ff24077cd445898d284197d6263, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 0}
+  ReObj: {fileID: 3548755968882120965}
+  script: {fileID: 5047803320812993360}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
@@ -456,7 +496,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7916563296427298289}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.006, z: 0.03}
+  m_LocalPosition: {x: 0, y: 6.05, z: 0.03}
   m_LocalScale: {x: 0.31158218, y: 0.3830229, z: 0.26260212}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -35,17 +35,20 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Title.unity
     guid: 88ebedfbaf816724caafce88a9e5ee28
   - enabled: 0
     path: Assets/Stage/stage/createScene_Uematsu.unity
     guid: fa3254c64d62c5b4aa2dc8bba5cc5b46
   - enabled: 0
-    path: Assets/Stage/stage/stage1-1douga.unity
-    guid: 1a37a9f80c3873e40887df91e60b3a05
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Stage/stage/dougaStage.unity
-    guid: ba24cd9cba6df8d45b9ea238063719a8
+    path: Assets/Stage/StageVer2/stage3-1.unity
+    guid: 5aa611cfa2c3fe14d9218bbaa1351152
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: e3f578e6dc0624f4caa443f6a42e69e1, type: 2}

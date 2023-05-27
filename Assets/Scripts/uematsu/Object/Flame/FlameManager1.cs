@@ -110,10 +110,6 @@ public class FlameManager1 : MonoBehaviour
             }
         }
 
-        if (other.gameObject.tag == "bookUnderHit")
-        {
-            ReObj.gameObject.SetActive(false);
-        }
     }
 
     void OnTriggerExit(Collider other)
@@ -193,10 +189,6 @@ public class FlameManager1 : MonoBehaviour
             }
         }
 
-        if (other.gameObject.tag == "bookUnderHit")
-        {
-            ReObj.gameObject.SetActive(false);
-        }
     }
 
     void Start()

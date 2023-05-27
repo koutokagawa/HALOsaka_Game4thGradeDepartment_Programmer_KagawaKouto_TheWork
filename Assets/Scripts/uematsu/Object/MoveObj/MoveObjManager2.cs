@@ -110,10 +110,7 @@ public class MoveObjManager2 : MonoBehaviour
             }
         }
 
-        if (other.gameObject.tag == "bookUnderHit")
-        {
-            ReObj.gameObject.SetActive(false);
-        }
+      
     }
 
     void OnTriggerExit(Collider other)
@@ -203,10 +200,7 @@ public class MoveObjManager2 : MonoBehaviour
             }
         }
 
-        if (other.gameObject.tag == "bookUnderHit")
-        {
-            ReObj.gameObject.SetActive(false);
-        }
+      
     }
 
     void Start()

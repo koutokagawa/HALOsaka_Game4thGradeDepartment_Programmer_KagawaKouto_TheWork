@@ -110,10 +110,6 @@ public class FlameManager3 : MonoBehaviour
             }
         }
 
-        if (other.gameObject.tag == "bookUnderHit")
-        {
-            ReObj.gameObject.SetActive(false);
-        }
     }
 
     void OnTriggerExit(Collider other)
