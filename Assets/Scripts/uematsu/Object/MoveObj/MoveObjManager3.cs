@@ -11,7 +11,7 @@ public class MoveObjManager3 : MonoBehaviour
 
     [Header("復活させるオブジェクト")]
     public GameObject ReObj;
-    public MoveObj1 script;
+    public MoveObj2 script;
 
     [Header("ページが縦向きの状態だとしてのオブジェクトの位置")]
     public bool ObjectPosL = false;
