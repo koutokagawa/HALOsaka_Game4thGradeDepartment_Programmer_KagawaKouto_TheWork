@@ -148,7 +148,7 @@ public class FrameObj1 : MonoBehaviour
         }
         else
         {
-            this.gameObject.SetActive(false);
+            Destroy(this.gameObject);
         }
     }
 }
