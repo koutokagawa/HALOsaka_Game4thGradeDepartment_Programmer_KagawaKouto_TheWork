@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5656239979364732575}
   m_Layer: 0
   m_Name: RayHitObjTopUnder
-  m_TagString: Block_lar
+  m_TagString: block_XL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7963336033299617}
   m_Layer: 0
   m_Name: RayHitObjTopUnder
-  m_TagString: Block_lar
+  m_TagString: Block_mid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -467,22 +467,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.11166606, y: 0.14528446, z: 0.05385796}
   m_Center: {x: 0, y: -0.013991559, z: -0.008730926}
---- !u!114 &4400252650860899358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8380898203069443712}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 232243f00631ef9459c9aa5db43d9885, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  character: {fileID: 0}
-  ObjectPosL: 0
-  ObjectPosR: 0
-  flameHit: 0
 --- !u!114 &2952967108456831877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -499,7 +483,7 @@ MonoBehaviour:
   ObjectPosL: 0
   ObjectPosR: 0
   flameHit: 0
---- !u!114 &9197563683861906654
+--- !u!114 &4400252650860899358
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -508,7 +492,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8380898203069443712}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6277872f870b84c45a869f205f03edfe, type: 3}
+  m_Script: {fileID: 11500000, guid: 232243f00631ef9459c9aa5db43d9885, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
@@ -529,6 +513,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 0}
   ObjectPosL: 1
+  ObjectPosR: 0
+  flameHit: 0
+--- !u!114 &9197563683861906654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8380898203069443712}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6277872f870b84c45a869f205f03edfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 0}
+  ObjectPosL: 0
   ObjectPosR: 0
   flameHit: 0
 --- !u!4 &9152790191937270842 stripped

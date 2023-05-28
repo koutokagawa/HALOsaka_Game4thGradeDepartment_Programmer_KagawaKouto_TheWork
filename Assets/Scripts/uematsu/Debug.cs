@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Debug : MonoBehaviour
 {
+  
     internal static void Log(string v)
     {
         //throw new NotImplementedException();
@@ -29,19 +30,29 @@ public class Debug : MonoBehaviour
         // F1と１ボタンを押すとシーンをロード
         if (Input.GetKey(KeyCode.F1) && Input.GetKey(KeyCode.Alpha1))
         {
-            SceneManager.LoadScene("game uematsu");
+            SceneManager.LoadScene("stage1-1");
         }
 
         // F1と2ボタンを押すとシーンをロード
         if (Input.GetKey(KeyCode.F1) && Input.GetKey(KeyCode.Alpha2))
         {
-            //SceneManager.LoadScene("ここにシーン名を書く");
+            SceneManager.LoadScene("stage2-1");
         }
 
         // F1と3ボタンを押すとシーンをロード
         if (Input.GetKey(KeyCode.F1) && Input.GetKey(KeyCode.Alpha3))
         {
-            //SceneManager.LoadScene("ここにシーン名を書く");
+            SceneManager.LoadScene("stage3-1");
+        }
+
+        if (Input.GetKey(KeyCode.F1) && Input.GetKey(KeyCode.Alpha4))
+        {
+            SceneManager.LoadScene("stage4-1");
+        }
+
+        if (Input.GetKey(KeyCode.F1) && Input.GetKey(KeyCode.Alpha5))
+        {
+            SceneManager.LoadScene("stage5-1");
         }
     }
 }

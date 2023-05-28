@@ -6214,6 +6214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b2353e0d1a8024e84939df9203c189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  headcheck: {fileID: 0}
 --- !u!1001 &422911221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6701,7 +6702,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ishitL: 0
   ishitR: 0
-  isCubeHit: 0
 --- !u!1 &556104954 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 102b3739eb569a84ead2f0dfbd01a4d0, type: 3}
@@ -7815,6 +7815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1e5be941c249ef4896ddcaf46519db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  headcheck: {fileID: 0}
 --- !u!4 &859593604 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2419794326405438143, guid: c42bc2adf79ffbf49a2194f9d7f39b91, type: 3}
@@ -8359,6 +8360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b2353e0d1a8024e84939df9203c189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  headcheck: {fileID: 0}
 --- !u!4 &1052960343 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2419794326405438143, guid: c42bc2adf79ffbf49a2194f9d7f39b91, type: 3}
@@ -8988,7 +8990,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Shaft1: {fileID: 1977189691}
   PageHit1: {fileID: 533368727}
-  character: {fileID: 2143411351}
+  waku1: {fileID: 0}
+  character: {fileID: 0}
+  statebookL: 0
+  statebookR: 0
+  pageMove1: 0
 --- !u!1001 &1151961918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9246,6 +9252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1e5be941c249ef4896ddcaf46519db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  headcheck: {fileID: 0}
 --- !u!1001 &1204138111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9833,6 +9840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1e5be941c249ef4896ddcaf46519db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  headcheck: {fileID: 0}
 --- !u!1001 &1459368274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10432,6 +10440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1e5be941c249ef4896ddcaf46519db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  headcheck: {fileID: 0}
 --- !u!1001 &1514394547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11307,6 +11316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b2353e0d1a8024e84939df9203c189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  headcheck: {fileID: 0}
 --- !u!1 &1646852586
 GameObject:
   m_ObjectHideFlags: 0
@@ -11759,6 +11769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1e5be941c249ef4896ddcaf46519db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  headcheck: {fileID: 0}
 --- !u!4 &1836905836 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2419794326405438143, guid: c42bc2adf79ffbf49a2194f9d7f39b91, type: 3}
@@ -12016,10 +12027,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af47f22303826184694e1ee8506c0653, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUp: 0
-  hitcheck: {fileID: 533368727}
-  hitCheckL: 0
-  hitCheckR: 0
 --- !u!114 &1977189697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12032,8 +12039,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e86f9a48ad45054bb8828cfb77452b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUp: 0
-  hitcheck: {fileID: 533368727}
 --- !u!1 &1997120581
 GameObject:
   m_ObjectHideFlags: 0
@@ -12634,6 +12639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1e5be941c249ef4896ddcaf46519db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  headcheck: {fileID: 0}
 --- !u!4 &2136249754 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5584445737786024019, guid: 2f4c4ac5d2f7fd34490faae102786a9b, type: 3}
@@ -12676,18 +12682,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   RoteSpeed: 1200
-  UpSpeed: 20
-  upCheck: {fileID: 1563115792}
+  Speed: 8
   UpTarget: {fileID: 1160881579}
   StartObject: {fileID: 481327422}
   movetarget: {fileID: 0}
-  RayYPos: -8
   DownCheck: 0
   UpCount: 0
-  MaxUp: 0
   PagePos: 0
   page: {fileID: 0}
   gb: []
+  NowMoveflg: 0
+  character: {fileID: 0}
+  col: {fileID: 0}
+  Max: {fileID: 0}
+  gearStop: 0
 --- !u!95 &2143411352
 Animator:
   serializedVersion: 5
@@ -12831,4 +12839,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: {fileID: 2143411358}
-  character: {fileID: 2143411351}
+  character: {fileID: 0}
+  Shaft: {fileID: 0}
+  High: 0

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class ibara1 : MonoBehaviour
+public class ibara3 : MonoBehaviour
 {
     [Header("復活させるオブジェクト")]
     public GameObject Obj;
