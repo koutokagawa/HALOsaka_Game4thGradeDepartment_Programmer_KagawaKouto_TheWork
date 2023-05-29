@@ -27,7 +27,7 @@ public class RayPlayer : MonoBehaviour
 
     private float distance_two;//オブジェクトまでのの距離を入れる
 
-
+    private bool AnimPlay = true;//アニメーションが再生中かどうか取得する
 
     private Vector3 target;
     [SerializeField] private GameObject movetarget;
@@ -66,6 +66,7 @@ public class RayPlayer : MonoBehaviour
     public CapsuleCollider col;
     public ChildSet Max;//MaxUpを参照するための変数  
     public bool gearStop = false;
+    
 
     private void Awake()
     {
@@ -85,6 +86,8 @@ public class RayPlayer : MonoBehaviour
         animator = GetComponent<Animator>();
 
         movetarget = StartObject;
+
+        animator.SetBool("B_Joy", false);
 
         pagemove = GameObject.Find("ShaftManager");
 
@@ -353,6 +356,19 @@ public class RayPlayer : MonoBehaviour
             }
         }
 
+        //ゴールアニメーションが終わったかどうかの取得
+        if(animator.GetBool("B_Joy")==true)
+        {
+            if (animator.GetCurrentAnimatorStateInfo(1).normalizedTime < 1)
+            {
+                AnimPlay = true;
+            }
+            else
+            {
+                AnimPlay=false;
+            }
+        }
+       
     }
 
     private void FixedUpdate()
@@ -477,5 +493,13 @@ public class RayPlayer : MonoBehaviour
         return zSpeed;
     }
 
+    private void OnCollisionStay(Collision other)
+    {
+        if(other.collider.CompareTag("GoalTag"))
+        {
+            animator.SetBool("B_Joy", true);
+        }
 
+    }
 }
+
