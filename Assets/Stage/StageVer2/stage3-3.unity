@@ -9182,6 +9182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: towerOcean
       objectReference: {fileID: 0}
+    - target: {fileID: 6494653474231801904, guid: 9cbd591d850de5445820f0bf48adc0eb, type: 3}
+      propertyPath: m_TagString
+      value: Uptag_lar
+      objectReference: {fileID: 0}
     - target: {fileID: 8076564320520357365, guid: 9cbd591d850de5445820f0bf48adc0eb, type: 3}
       propertyPath: Page1
       value: 1
@@ -9441,6 +9445,10 @@ PrefabInstance:
     - target: {fileID: 6402997247816382114, guid: 82acef58cc05ba8449d1cb64ac548e66, type: 3}
       propertyPath: ObjectPosL
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242730890867195539, guid: 82acef58cc05ba8449d1cb64ac548e66, type: 3}
+      propertyPath: m_TagString
+      value: Uptag_lar
       objectReference: {fileID: 0}
     - target: {fileID: 9033607641723362864, guid: 82acef58cc05ba8449d1cb64ac548e66, type: 3}
       propertyPath: m_RootOrder
@@ -15059,6 +15067,10 @@ PrefabInstance:
     - target: {fileID: 3080759377751023113, guid: 22bd5577993e4764bbe3298d6fb487a4, type: 3}
       propertyPath: m_Name
       value: kaigara
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197279784494952356, guid: 22bd5577993e4764bbe3298d6fb487a4, type: 3}
+      propertyPath: m_TagString
+      value: Uptag_mid
       objectReference: {fileID: 0}
     - target: {fileID: 6533890434277363140, guid: 22bd5577993e4764bbe3298d6fb487a4, type: 3}
       propertyPath: m_Enabled
