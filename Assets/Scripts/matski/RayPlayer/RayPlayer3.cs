@@ -126,7 +126,7 @@ public class RayPlayer3 : MonoBehaviour
 
         RayStartUnder.x = this.transform.position.x;
         RayStartUnder.z = this.transform.position.z;
-        RayStartUnder.y = -2.0f;
+        RayStartUnder.y = -3.6f;
 
       
 
