@@ -4842,6 +4842,7 @@ GameObject:
   - component: {fileID: 1153728314655337430}
   - component: {fileID: 5085601836607425576}
   - component: {fileID: 8819511446746296239}
+  - component: {fileID: 570044152495303443}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -4927,6 +4928,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &570044152495303443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3934896443533575015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a897404815c4d344a325c60c7e9ce76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5114452679874132299
 GameObject:
   m_ObjectHideFlags: 0
@@ -5098,7 +5111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  ReObj: {fileID: 5811431051297114243}
+  Obj: {fileID: 0}
   script: {fileID: 0}
   ObjectPosL: 0
   ObjectPosR: 0
@@ -5228,7 +5241,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2015625615234974642
 Transform:
   m_ObjectHideFlags: 0
@@ -5237,8 +5250,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8263553857164042640}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.00066471146, y: 0.120000005, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.50342}
+  m_LocalPosition: {x: 0.00066471146, y: 0.10158, z: 0.0000000015147}
+  m_LocalScale: {x: 1.4066, y: 1.4066, z: 0.7081106}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6189416970948999085}

@@ -77,6 +77,7 @@ GameObject:
   - component: {fileID: 7039173538975893978}
   - component: {fileID: 624789807887249626}
   - component: {fileID: 9110773785990351986}
+  - component: {fileID: 7448002936075058707}
   m_Layer: 0
   m_Name: house
   m_TagString: lockObj
@@ -163,6 +164,27 @@ MonoBehaviour:
   bookPosObj: {fileID: 6793049617805984167}
   ObjectPosL: 0
   ObjectPosR: 0
+--- !u!114 &7448002936075058707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2540993564006057343}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2ead40a5abb364b921b8a668316cc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Obj: {fileID: 0}
+  flame: {fileID: 0}
+  ObjectPosL: 0
+  ObjectPosR: 0
+  Page1: 0
+  Page2: 0
+  Page3: 0
+  Page4: 0
+  count: 0
 --- !u!1 &5116377808219977780
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class ibara1 : MonoBehaviour
+public class hitFlame : MonoBehaviour
 {
     [Header("復活させるオブジェクト")]
     public GameObject Obj;
-
     public GameObject flame;
 
     [Header("ページが縦向きの状態だとしてのオブジェクトの位置")]
@@ -27,6 +26,7 @@ public class ibara1 : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+
         if (collision.gameObject.tag == "flame")
         {
             flameHit = true;
@@ -212,7 +212,7 @@ public class ibara1 : MonoBehaviour
             {
                 Obj.gameObject.SetActive(false);
             }
-        } 
+        }
     }
 
 }
