@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class RotatePage4 : MonoBehaviour
 {
     private const float LeftRotationAngle = 176f;
-    private const float RightRotationAngle = 8.1f;
+    private const float RightRotationAngle = 7.9f;
     private const float rotationTime = 0.5f;
 
     public GameObject RotatePage3Object; // RotatePage3オブジェクトへの参照を追加
