@@ -6451,7 +6451,6 @@ GameObject:
   - component: {fileID: 567721445}
   - component: {fileID: 567721443}
   - component: {fileID: 567721442}
-  - component: {fileID: 567721441}
   - component: {fileID: 567721446}
   m_Layer: 0
   m_Name: playerUpTarget
@@ -6460,18 +6459,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &567721441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 567721440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801c01d1c7fb28e4fb83f2f4dbc7708d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &567721442
 Rigidbody:
   m_ObjectHideFlags: 0

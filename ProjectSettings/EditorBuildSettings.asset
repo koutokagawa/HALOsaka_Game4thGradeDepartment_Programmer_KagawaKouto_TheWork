@@ -5,42 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/Stage/Stage1-1.unity
-    guid: ee89d3def8636384d841fe782ad2ba0e
-  - enabled: 0
-    path: Assets/Scenes/ProtoTypeScene/stageselect.unity
-    guid: d818685f721dd7146996169ebfa4007d
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/ProtoTypeScene/tmpObjectScene.unity
-    guid: a672dedc1503afc46842e35dcefa3f4b
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Stage/StageVer2/Title.unity
     guid: 88ebedfbaf816724caafce88a9e5ee28
-  - enabled: 0
-    path: Assets/Stage/stage/createScene_Uematsu.unity
-    guid: fa3254c64d62c5b4aa2dc8bba5cc5b46
   - enabled: 1
     path: Assets/Stage/StageVer2/stage1-1.unity
     guid: 5e32e30c384415243ade0231405968e3
@@ -53,11 +20,53 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Stage/StageVer2/stage1-4.unity
     guid: 4ae5ac0b8c9566c4f80ef482a45ff3f5
+  - enabled: 1
+    path: Assets/Stage/StageVer2/stage2-1.unity
+    guid: b15284f17ce11f640bf29ca6c13ff671
   - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+    path: Assets/Stage/StageVer2/stage2-2.unity
+    guid: ddfb7433035458f48a44f2d0a9be158a
   - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+    path: Assets/Stage/StageVer2/stage2-3.unity
+    guid: cc8835a918870f1458a2ea8064001fcb
+  - enabled: 0
+    path: Assets/Stage/StageVer2/stage2-4.unity
+    guid: e4b62a843db05b7488c265e7ab31dc06
+  - enabled: 1
+    path: Assets/Stage/StageVer2/stage3-1.unity
+    guid: 5aa611cfa2c3fe14d9218bbaa1351152
+  - enabled: 0
+    path: Assets/Stage/StageVer2/stage3-2.unity
+    guid: ca86d0b1fad9ab241b70691a4ffc8d43
+  - enabled: 0
+    path: Assets/Stage/StageVer2/stage3-3.unity
+    guid: bedefa91f10170a488a8646e9c7a1413
+  - enabled: 0
+    path: Assets/Stage/StageVer2/stage3-4.unity
+    guid: a7f9782b79674b247b0a614dc280c249
+  - enabled: 1
+    path: Assets/Stage/StageVer2/stage4-1.unity
+    guid: 12f18be9761e9b84eb3b1a49618598e7
+  - enabled: 0
+    path: Assets/Stage/StageVer2/stage4-2.unity
+    guid: e9fed95d935e1d54ead67c2a1881b05e
+  - enabled: 0
+    path: Assets/Stage/StageVer2/stage4-3.unity
+    guid: ce7dad5c85b46e846b59439f9b9910b0
+  - enabled: 0
+    path: Assets/Stage/StageVer2/stage4-4.unity
+    guid: 8de1de0aa62d23b4a89bc641616c4f88
+  - enabled: 1
+    path: Assets/Stage/StageVer2/stage5-1.unity
+    guid: 32b5a36c71d5b784eacb4736a1d0814c
+  - enabled: 0
+    path: Assets/Stage/StageVer2/stage5-2.unity
+    guid: 8f39eeeae45696a4bb55d84e138f643e
+  - enabled: 0
+    path: Assets/Stage/StageVer2/stage5-3.unity
+    guid: 254e8996738ed4647971bba58da0fa89
+  - enabled: 0
+    path: Assets/Stage/StageVer2/stage5-4.unity
+    guid: bd39d8d8966afce49a8951dd7f5c4ef7
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: e3f578e6dc0624f4caa443f6a42e69e1, type: 2}
