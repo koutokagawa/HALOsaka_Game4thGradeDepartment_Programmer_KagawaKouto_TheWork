@@ -35,8 +35,6 @@ public class UpTargetMove2 : MonoBehaviour
             this.GetComponent<BoxCollider>().isTrigger = false;
         }
 
-
-
         if (character.GetComponent<PlayerUp>().MaxUp == true)
         {
             this.GetComponent<BoxCollider>().isTrigger = false;
