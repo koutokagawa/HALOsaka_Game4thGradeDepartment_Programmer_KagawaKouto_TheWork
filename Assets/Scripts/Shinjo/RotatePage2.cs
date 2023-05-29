@@ -23,7 +23,6 @@ public class RotatePage2 : MonoBehaviour
 
         if (gamepad.dpad.right.wasPressedThisFrame)
         {
-            // もしスクリプトが左回転角度(176.55度)にいるときに右ボタンが再度押されたら、RotatePage2スクリプトを無効にする
             if (Mathf.Abs(transform.eulerAngles.z - LeftRotationAngle) < 0.01f)
             {
                 this.enabled = false;
@@ -34,7 +33,7 @@ public class RotatePage2 : MonoBehaviour
         }
         else if (gamepad.dpad.left.wasPressedThisFrame)
         {
-            if (Mathf.Abs(transform.eulerAngles.z - RightRotationAngle) < 0.01f)
+            if (Mathf.Abs(transform.eulerAngles.z - LeftRotationAngle) < 0.01f)
             {
                 RotatePage3Object.GetComponent<RotatePage3>().enabled = false;
                 isRotatePage3Enabled = false;
