@@ -6856,29 +6856,12 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7021662701510786322, guid: c7b907f37a623d545b4dc383ab9f278d, type: 3}
+      propertyPath: ObjectPosR
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7b907f37a623d545b4dc383ab9f278d, type: 3}
---- !u!1 &403097187 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5126758722578790062, guid: c7b907f37a623d545b4dc383ab9f278d, type: 3}
-  m_PrefabInstance: {fileID: 403097186}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &403097188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 403097187}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e381d1ad6c1a2a4eb3473093c4c0321, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  character: {fileID: 2143411350}
-  ObjectPosL: 1
-  ObjectPosR: 0
-  flameHit: 0
 --- !u!1001 &403835448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8714,6 +8697,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 985027896}
     m_Modifications:
+    - target: {fileID: 908171962606889196, guid: 2f4c4ac5d2f7fd34490faae102786a9b, type: 3}
+      propertyPath: lengthInSec
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 908171962606889196, guid: 2f4c4ac5d2f7fd34490faae102786a9b, type: 3}
+      propertyPath: InitialModule.size3D
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 908171962606889196, guid: 2f4c4ac5d2f7fd34490faae102786a9b, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3722368900564270684, guid: 2f4c4ac5d2f7fd34490faae102786a9b, type: 3}
       propertyPath: ObjectPosL
       value: 1
@@ -9285,7 +9280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5584445737786024019, guid: 2f4c4ac5d2f7fd34490faae102786a9b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.79999995
+      value: -2.09
       objectReference: {fileID: 0}
     - target: {fileID: 5584445737786024019, guid: 2f4c4ac5d2f7fd34490faae102786a9b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17344,6 +17339,7 @@ MonoBehaviour:
   targetScaleX: 3800
   duration: 1
   scaleUp: 1
+  targetScaleXDown: 0.0006428797
 --- !u!183 &1563386910
 Cloth:
   m_ObjectHideFlags: 0
@@ -18174,6 +18170,7 @@ MonoBehaviour:
   targetScaleX: 3800
   duration: 1
   scaleUp: 1
+  targetScaleXDown: 0.0006428797
 --- !u!137 &1691279133
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
