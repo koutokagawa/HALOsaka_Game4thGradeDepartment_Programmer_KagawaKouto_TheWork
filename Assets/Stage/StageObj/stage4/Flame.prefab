@@ -9886,7 +9886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  ReObj: {fileID: 8890325902820317852}
+  Obj: {fileID: 8890325902820317852}
   script: {fileID: 8890325902820317843}
   ObjectPosL: 0
   ObjectPosR: 0
@@ -9930,7 +9930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  ReObj: {fileID: 8890325902820317852}
+  Obj: {fileID: 8890325902820317852}
   script: {fileID: 8890325902820317841}
   ObjectPosL: 0
   ObjectPosR: 0
@@ -9952,8 +9952,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  ReObj: {fileID: 0}
-  script: {fileID: 0}
+  Obj: {fileID: 8890325902820317852}
+  script: {fileID: 8890325902820317841}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0

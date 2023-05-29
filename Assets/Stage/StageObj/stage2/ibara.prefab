@@ -4842,7 +4842,7 @@ GameObject:
   - component: {fileID: 2276604851299215270}
   - component: {fileID: 2823590497520308973}
   - component: {fileID: 3250214484854207752}
-  - component: {fileID: 9002243592872803728}
+  - component: {fileID: 6633900302398060346}
   m_Layer: 0
   m_Name: ibara
   m_TagString: Untagged
@@ -4911,7 +4911,7 @@ MonoBehaviour:
   bookPosObj: {fileID: 1200868020494582701}
   ObjectPosL: 0
   ObjectPosR: 0
---- !u!114 &9002243592872803728
+--- !u!114 &6633900302398060346
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4920,7 +4920,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1008278275099773643}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b93b835e34a18a44aac6e5843d37f93d, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a2ead40a5abb364b921b8a668316cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Obj: {fileID: 1200868020494582701}
@@ -4931,6 +4931,7 @@ MonoBehaviour:
   Page2: 0
   Page3: 0
   Page4: 0
+  count: 0
 --- !u!1 &1323602754821624751
 GameObject:
   m_ObjectHideFlags: 0

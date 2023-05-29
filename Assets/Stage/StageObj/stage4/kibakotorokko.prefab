@@ -5107,7 +5107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c56ee7c5d5718b40a7f42a217c87d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 7677108520405782206}
+  Obj: {fileID: 0}
   flame: {fileID: 1602798854454457727}
   count: 0
 --- !u!114 &7266931160382408069
@@ -5168,7 +5168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  ReObj: {fileID: 7677108520405782206}
+  Obj: {fileID: 7677108520405782206}
   script: {fileID: 431918628666179705}
   ObjectPosL: 0
   ObjectPosR: 0
@@ -5190,8 +5190,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  ReObj: {fileID: 0}
-  script: {fileID: 0}
+  Obj: {fileID: 7677108520405782206}
+  script: {fileID: 5872492855808235116}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
@@ -5212,8 +5212,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  ReObj: {fileID: 0}
-  script: {fileID: 0}
+  Obj: {fileID: 7677108520405782206}
+  script: {fileID: 5872492855808235116}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
@@ -5234,8 +5234,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  ReObj: {fileID: 0}
-  script: {fileID: 0}
+  Obj: {fileID: 7677108520405782206}
+  script: {fileID: 8624195989170323073}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
