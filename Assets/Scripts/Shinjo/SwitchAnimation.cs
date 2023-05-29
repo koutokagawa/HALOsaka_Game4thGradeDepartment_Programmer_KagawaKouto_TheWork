@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 public class SwitchAnimation : MonoBehaviour
 {
-    [Header("切り離したい子オブジェクト")]
+    [Header("切り離したい子オブジェクト")]          
     public GameObject[] children;
 
     public GameObject scriptHolder; // 有効化したいスクリプトを持っているオブジェクト

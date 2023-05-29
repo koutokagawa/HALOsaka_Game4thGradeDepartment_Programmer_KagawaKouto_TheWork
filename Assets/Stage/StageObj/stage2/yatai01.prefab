@@ -78,8 +78,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  ReObj: {fileID: 8832044681624708532}
-  script: {fileID: 0}
+  Obj: {fileID: 8832044681624708532}
+  script: {fileID: 3530346716730687143}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
@@ -100,8 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  ReObj: {fileID: 8832044681624708532}
-  script: {fileID: 0}
+  Obj: {fileID: 8832044681624708532}
+  script: {fileID: 1449980004308874183}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
@@ -426,22 +426,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.13133547, y: 0.11788442, z: 0.09318214}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3530346716730687143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8832044681624708532}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8498b1d1f6df9eb4797c418c2d322fc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  character: {fileID: 0}
-  ObjectPosL: 0
-  ObjectPosR: 0
-  flameHit: 0
 --- !u!114 &1449980004308874183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,6 +436,22 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e381d1ad6c1a2a4eb3473093c4c0321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 0}
+  ObjectPosL: 0
+  ObjectPosR: 0
+  flameHit: 0
+--- !u!114 &1944491140951358045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8832044681624708532}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6277872f870b84c45a869f205f03edfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
@@ -474,7 +474,7 @@ MonoBehaviour:
   ObjectPosL: 0
   ObjectPosR: 0
   flameHit: 0
---- !u!114 &1944491140951358045
+--- !u!114 &3530346716730687143
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -483,7 +483,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8832044681624708532}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6277872f870b84c45a869f205f03edfe, type: 3}
+  m_Script: {fileID: 11500000, guid: 8498b1d1f6df9eb4797c418c2d322fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
