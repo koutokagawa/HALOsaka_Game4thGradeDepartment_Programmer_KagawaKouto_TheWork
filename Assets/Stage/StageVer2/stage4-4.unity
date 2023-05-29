@@ -5096,6 +5096,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 109982758}
     m_Modifications:
+    - target: {fileID: 1602798854454457727, guid: 04c3804a3c0fc6943b8e3b951790ced2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2678428863731829652, guid: 04c3804a3c0fc6943b8e3b951790ced2, type: 3}
       propertyPath: m_Name
       value: kibakotorokko (1)
@@ -9999,7 +10003,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147444174}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.3000002, y: 2, z: 3.1270003}
+  m_LocalPosition: {x: -2.3000002, y: 1.8, z: 3.1270003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25003,6 +25007,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 749765295}
     m_Modifications:
+    - target: {fileID: 1602798854454457727, guid: 04c3804a3c0fc6943b8e3b951790ced2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2678428863731829652, guid: 04c3804a3c0fc6943b8e3b951790ced2, type: 3}
       propertyPath: m_Name
       value: kibakotorokko
