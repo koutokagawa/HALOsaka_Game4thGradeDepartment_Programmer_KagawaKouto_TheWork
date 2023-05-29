@@ -5221,6 +5221,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: moveStorn
       objectReference: {fileID: 0}
+    - target: {fileID: 3404134877965608852, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1820876307}
+    - target: {fileID: 3404134877965608852, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404134877965608852, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
+      propertyPath: ObjectPosL
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4335240492409264406, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: ReObj
       value: 
@@ -7081,7 +7093,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1248365104}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841214170}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8498b1d1f6df9eb4797c418c2d322fc5, type: 3}
   m_Name: 
@@ -13286,6 +13298,22 @@ PrefabInstance:
     - target: {fileID: 2237769023634188582, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: m_Name
       value: moveStorn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404134877965608852, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1820876307}
+    - target: {fileID: 3404134877965608852, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404134877965608852, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
+      propertyPath: ObjectPosL
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404134877965608852, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
+      propertyPath: ObjectPosR
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4335240492409264406, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: ReObj
@@ -23623,7 +23651,6 @@ GameObject:
   - component: {fileID: 1486858736}
   - component: {fileID: 1486858735}
   - component: {fileID: 1486858737}
-  - component: {fileID: 1486858734}
   m_Layer: 0
   m_Name: playerUpTarget
   m_TagString: Untagged
@@ -23631,18 +23658,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1486858734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1486858733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801c01d1c7fb28e4fb83f2f4dbc7708d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1486858735
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24675,7 +24690,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 168798590}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624122137}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8498b1d1f6df9eb4797c418c2d322fc5, type: 3}
   m_Name: 
