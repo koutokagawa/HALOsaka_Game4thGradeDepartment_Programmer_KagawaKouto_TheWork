@@ -7268,6 +7268,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5878587556961177120, guid: 7c2fb0b2d81d7384db0ee7c95f04553a, type: 3}
+      propertyPath: upChrck
+      value: 
+      objectReference: {fileID: 1563115792}
+    - target: {fileID: 5878587556961177120, guid: 7c2fb0b2d81d7384db0ee7c95f04553a, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 2143411350}
+    - target: {fileID: 5878587556961177120, guid: 7c2fb0b2d81d7384db0ee7c95f04553a, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -9006,6 +9014,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5878587556961177120, guid: 7c2fb0b2d81d7384db0ee7c95f04553a, type: 3}
+      propertyPath: upChrck
+      value: 
+      objectReference: {fileID: 1563115792}
+    - target: {fileID: 5878587556961177120, guid: 7c2fb0b2d81d7384db0ee7c95f04553a, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 2143411350}
     - target: {fileID: 5878587556961177120, guid: 7c2fb0b2d81d7384db0ee7c95f04553a, type: 3}
       propertyPath: m_Enabled
       value: 1
