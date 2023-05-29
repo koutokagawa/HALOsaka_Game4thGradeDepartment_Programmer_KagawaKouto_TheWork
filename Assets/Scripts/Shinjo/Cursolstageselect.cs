@@ -44,11 +44,11 @@ public class Cursolstageselect : MonoBehaviour
 
         cameraPositions = new List<Vector3>
         {
-            new Vector3(-33.93f, 34.34f, 99.22f),  // stage1bookのカメラ位置
-            new Vector3(55.3f, 25.4f, 114.89f),   // stage2bookのカメラ位置
+            new Vector3(-57.11f, 31.94f, 101.22f),  // stage1bookのカメラ位置
+            new Vector3(-32.2f, 5.7f, 97.6f),   // stage2bookのカメラ位置
             new Vector3(-1.4f, 31.94f, 101.22f), // stage3bookのカメラ位置
-            new Vector3(-4.72f, -22.78f, 114.89f),  // stage4bookのカメラ位置
-            new Vector3(56.83f, -22.78f, 114.89f)   // stage5bookのカメラ位置
+            new Vector3(28f, 5.7f, 97.6f),  // stage4bookのカメラ位置
+            new Vector3(53.4f, 31.94f, 101.22f)   // stage5bookのカメラ位置
         };
 
         // 各ステージブックからスクリプトを取得

@@ -11,7 +11,7 @@ public class FirstbuttonAction : MonoBehaviour
     [SerializeField] private GameObject stageSelectCube;
     [SerializeField] private Transform cameraTransform; // reference to the camera's transform
 
-    private Vector3 targetPosition = new Vector3(11.6f, 21.7f, 105.2f); // target position for the camera
+    private Vector3 targetPosition = new Vector3(-0.7f, 27.4f, 106.9f); // target position for the camera
 
     public void ButtonClicked(UnityEngine.UI.Button button)
     {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneController : MonoBehaviour
 {
@@ -10,12 +11,13 @@ public class SceneController : MonoBehaviour
     private int currentSceneIndex = 0;
 
     public List<string> sceneNames = new List<string>();
+    private AsyncOperation asyncOperation;
+    public Image fadeImage; // Fade effect image
 
     void Start()
     {
         gamepad = Gamepad.current;
-
-
+        fadeImage.gameObject.SetActive(false); // initially invisible
     }
 
     void Update()
@@ -27,7 +29,7 @@ public class SceneController : MonoBehaviour
 
         if (gamepad.buttonSouth.wasPressedThisFrame)
         {
-            LoadScene();
+            StartCoroutine(LoadSceneAsync());
         }
 
         if (gamepad.dpad.left.wasPressedThisFrame)
@@ -41,9 +43,29 @@ public class SceneController : MonoBehaviour
         }
     }
 
-    private void LoadScene()
+    private IEnumerator LoadSceneAsync()
     {
         string sceneName = sceneNames[currentSceneIndex];
-        SceneManager.LoadScene(sceneName);
+
+        fadeImage.gameObject.SetActive(true); // make the fade image visible
+        Color fadeColor = fadeImage.color;
+        float fadeDuration = 1f; // fade duration
+        float fadeTimer = 0f;
+
+        // Fade out
+        while (fadeTimer < fadeDuration)
+        {
+            fadeTimer += Time.deltaTime;
+            fadeColor.a = Mathf.Lerp(0, 1, fadeTimer / fadeDuration);
+            fadeImage.color = fadeColor;
+            yield return null;
+        }
+
+        asyncOperation = SceneManager.LoadSceneAsync(sceneName);
+
+        while (!asyncOperation.isDone)
+        {
+            yield return null;
+        }
     }
 }
