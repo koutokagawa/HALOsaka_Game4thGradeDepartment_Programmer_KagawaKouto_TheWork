@@ -53,6 +53,8 @@ TagManager:
   - Bard_3
   - moveobj
   - lockObj
+  - Ground
+  - aoitori
   layers:
   - Default
   - TransparentFX
