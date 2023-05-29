@@ -53,7 +53,7 @@ TagManager:
   - Bard_3
   - moveobj
   - lockObj
-  - ibara
+  - GoalObj
   layers:
   - Default
   - TransparentFX
