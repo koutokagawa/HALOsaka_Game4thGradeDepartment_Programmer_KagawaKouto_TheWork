@@ -72,8 +72,6 @@ public class MoveObj1 : MonoBehaviour
             moveLineHit = false;
         }
 
-
-
         if (ObjectPosL == true)
         {
             if (other.gameObject.tag == "bookL")
@@ -150,6 +148,10 @@ public class MoveObj1 : MonoBehaviour
             {
                 rb.constraints = RigidbodyConstraints.FreezeAll;
             }
+        }
+        else
+        {
+            Destroy(this.gameObject);
         }
     }
 }

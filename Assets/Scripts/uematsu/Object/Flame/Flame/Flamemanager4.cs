@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class FlameManager4 : MonoBehaviour
+public class Flamemanager4 : MonoBehaviour
 {
     [Header("characterオブジェクトを入れる")] public GameObject character;
 
@@ -109,11 +109,6 @@ public class FlameManager4 : MonoBehaviour
                 }
             }
         }
-
-        if (other.gameObject.tag == "bookUnderHit")
-        {
-            ReObj.gameObject.SetActive(false);
-        }
     }
 
     void OnTriggerExit(Collider other)
@@ -193,10 +188,6 @@ public class FlameManager4 : MonoBehaviour
             }
         }
 
-        if (other.gameObject.tag == "bookUnderHit")
-        {
-            ReObj.gameObject.SetActive(false);
-        }
     }
 
     void Start()
@@ -215,7 +206,7 @@ public class FlameManager4 : MonoBehaviour
                 // 炎に当たったら消す
                 if (script.hit == true)
                 {
-                    ReObj.gameObject.SetActive(false);
+                    Destroy(ReObj.gameObject);
                 }
                 else
                 {

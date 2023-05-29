@@ -188,7 +188,6 @@ public class FlameManager1 : MonoBehaviour
                 }
             }
         }
-
     }
 
     void Start()
@@ -207,7 +206,7 @@ public class FlameManager1 : MonoBehaviour
                 // âäÇ…ìñÇΩÇ¡ÇΩÇÁè¡Ç∑
                 if (script.hit == true)
                 {
-                    Destroy(this.gameObject);
+                    Destroy(ReObj.gameObject);
                 }
                 else
                 {

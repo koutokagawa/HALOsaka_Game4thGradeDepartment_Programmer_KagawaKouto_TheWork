@@ -23,6 +23,7 @@ public class ibara1 : MonoBehaviour
     private bool hit = false;
     private bool flameHit = false;
 
+    public float count = 0;
 
     void OnCollisionEnter(Collision collision)
     {
@@ -186,22 +187,32 @@ public class ibara1 : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-
-
-        if (hit == false)
+        if (Obj != null)
         {
-            Obj.gameObject.SetActive(true);
-        }
+            if (hit == false)
+            {
+                Obj.gameObject.SetActive(true);
+            }
 
-        if (flameHit == true)
-        {
-            flame.gameObject.SetActive(true);
-        }
+            if (flameHit == true)
+            {
+                count += Time.deltaTime; // 経過時間を計算
 
-        if (hit == true)
-        {
-            Obj.gameObject.SetActive(false);
-        }
+                // 経過時間が過ぎたらリセット
+                if (count > 3.0f)
+                {
+                    Destroy(Obj.gameObject);
+                    Destroy(flame.gameObject);
+                }
+
+                flame.gameObject.SetActive(true);
+            }
+
+            if (hit == true)
+            {
+                Obj.gameObject.SetActive(false);
+            }
+        } 
     }
 
 }

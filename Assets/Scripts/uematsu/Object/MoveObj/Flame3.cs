@@ -29,8 +29,8 @@ public class Flame3 : MonoBehaviour
             // 経過時間が過ぎたらリセット
             if (count > 5.0f)
             {
-                obj.gameObject.SetActive(false);
-                flame.gameObject.SetActive(false);
+                Destroy(obj.gameObject);
+                Destroy(flame.gameObject);
             }
         }
     }

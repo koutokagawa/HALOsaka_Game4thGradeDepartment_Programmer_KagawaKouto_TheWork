@@ -211,7 +211,7 @@ public class FlameManager3 : MonoBehaviour
                 // âäÇ…ìñÇΩÇ¡ÇΩÇÁè¡Ç∑
                 if (script.hit == true)
                 {
-                    ReObj.gameObject.SetActive(false);
+                    Destroy(ReObj.gameObject);
                 }
                 else
                 {

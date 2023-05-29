@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class Flame2 : MonoBehaviour
@@ -19,18 +20,21 @@ public class Flame2 : MonoBehaviour
     void Update()
     {
         // オブジェクトの位置をobjと同じ位置にする
-        flame.transform.position = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z);
-
-        if (obj.GetComponent<MoveObj2>().flameHit == true)
+        if (obj != null)
         {
-            flame.gameObject.SetActive(true);
-            count += Time.deltaTime;
+            flame.transform.position = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z);
 
-            // 経過時間が過ぎたらリセット
-            if (count > 5.0f)
+            if (obj.GetComponent<MoveObj2>().flameHit == true)
             {
-                obj.gameObject.SetActive(false);
-                flame.gameObject.SetActive(false);
+                flame.gameObject.SetActive(true);
+                count += Time.deltaTime;
+
+                // 経過時間が過ぎたらリセット
+                if (count > 5.0f)
+                {
+                    Destroy(obj.gameObject);
+                    Destroy(flame.gameObject);
+                }
             }
         }
     }

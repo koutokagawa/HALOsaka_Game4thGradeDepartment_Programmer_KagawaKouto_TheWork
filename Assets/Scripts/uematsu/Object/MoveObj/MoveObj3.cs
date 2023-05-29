@@ -117,7 +117,6 @@ public class MoveObj3 : MonoBehaviour
             // プレイヤーが地面にいるのか判定     falseなら地面にいる
             if (character.GetComponent<RayPlayer3>().DownCheck == true)
             {
-
                 // 移動可能なオブジェクトに当たっている間は動ける
                 if (moveLineHit == true)
                 {
@@ -151,5 +150,10 @@ public class MoveObj3 : MonoBehaviour
                 rb.constraints = RigidbodyConstraints.FreezeAll;
             }
         }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
+    
 }

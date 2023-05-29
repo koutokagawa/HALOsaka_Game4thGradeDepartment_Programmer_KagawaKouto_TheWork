@@ -9695,8 +9695,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.9195824, y: 2.900015, z: 13.09528}
-  m_Center: {x: 0.20220757, y: 0.17680812, z: 5.639245}
+  m_Size: {x: 2.891201, y: 3.2720358, z: 13.09528}
+  m_Center: {x: -0.004122734, y: 0.104584694, z: 5.639245}
 --- !u!114 &8890325902820317843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9720,7 +9720,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8890325902820317852}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3504f01036d1d3347b38c4d70df7d749, type: 3}
   m_Name: 
@@ -9820,6 +9820,7 @@ GameObject:
   - component: {fileID: 8890325903898357010}
   - component: {fileID: 8890325903898357011}
   - component: {fileID: 8890325903898357008}
+  - component: {fileID: 8651469416974635512}
   m_Layer: 0
   m_Name: Flame
   m_TagString: Untagged
@@ -9907,7 +9908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  ReObj: {fileID: 8890325902820317852}
+  Obj: {fileID: 8890325902820317852}
   script: {fileID: 8890325902820317840}
   ObjectPosL: 1
   ObjectPosR: 0
@@ -9926,6 +9927,28 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71e67c13b14075946ad004a55d41b5c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 0}
+  ReObj: {fileID: 8890325902820317852}
+  script: {fileID: 8890325902820317841}
+  ObjectPosL: 0
+  ObjectPosR: 0
+  Page1: 0
+  Page2: 0
+  Page3: 0
+  Page4: 0
+  hit: 0
+--- !u!114 &8651469416974635512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8890325903898357022}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccaf3274405489241a6c25c00ca9f7bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}

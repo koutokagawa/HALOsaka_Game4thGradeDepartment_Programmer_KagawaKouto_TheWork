@@ -151,5 +151,9 @@ public class MoveObj4 : MonoBehaviour
                 rb.constraints = RigidbodyConstraints.FreezeAll;
             }
         }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
