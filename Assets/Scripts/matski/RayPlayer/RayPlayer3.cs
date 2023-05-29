@@ -358,7 +358,7 @@ public class RayPlayer3 : MonoBehaviour
         //ゴールアニメーションが終わったかどうかの取得
         if (animator.GetBool("B_Joy") == true)
         {
-            if (animator.GetCurrentAnimatorStateInfo(1).normalizedTime < 1)
+            if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1)
             {
                 AnimPlay = true;
             }
