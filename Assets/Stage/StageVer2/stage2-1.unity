@@ -13746,10 +13746,9 @@ GameObject:
   - component: {fileID: 1322205287}
   - component: {fileID: 1322205286}
   - component: {fileID: 1322205289}
-  - component: {fileID: 1322205290}
-  - component: {fileID: 1322205291}
   - component: {fileID: 1322205292}
   - component: {fileID: 1322205293}
+  - component: {fileID: 1322205294}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -13857,30 +13856,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1322205290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1322205285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d9addaf7e02f09438cc38e40862adf7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1322205291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1322205285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b612a7753d1f8104da3ffe33f4c03dca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1322205292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13951,6 +13926,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e49f6e8d037e84f449fdc65605be134e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1322205294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322205285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b612a7753d1f8104da3ffe33f4c03dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1350468449
@@ -19498,6 +19485,7 @@ MonoBehaviour:
   targetScaleX: 3800
   duration: 1
   scaleUp: 1
+  targetScaleXDown: 0.0006428797
 --- !u!183 &1563386910
 Cloth:
   m_ObjectHideFlags: 0
@@ -20153,6 +20141,7 @@ MonoBehaviour:
   targetScaleX: 3800
   duration: 1
   scaleUp: 1
+  targetScaleXDown: 0.0006428797
 --- !u!137 &1691279133
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
