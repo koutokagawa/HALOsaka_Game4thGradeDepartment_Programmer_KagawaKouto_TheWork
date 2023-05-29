@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Flame1 : MonoBehaviour
 {
-    public GameObject obj;
+    public GameObject Obj;
     public GameObject flame; // 追従先オブジェクトのTransform
 
     public float count = 0;
@@ -18,19 +18,22 @@ public class Flame1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // オブジェクトの位置をobjと同じ位置にする
-        flame.transform.position = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z);
-
-        if (obj.GetComponent<MoveObj1>().flameHit == true)
+        if (Obj != null)
         {
-            flame.gameObject.SetActive(true);
-            count += Time.deltaTime;
+            // オブジェクトの位置をobjと同じ位置にする
+            flame.transform.position = new Vector3(Obj.transform.position.x, Obj.transform.position.y, Obj.transform.position.z);
 
-            // 経過時間が過ぎたらリセット
-            if (count > 5.0f)
+            if (Obj.GetComponent<MoveObj1>().flameHit == true)
             {
-                Destroy(obj.gameObject);
-                Destroy(flame.gameObject);
+                flame.gameObject.SetActive(true);
+                count += Time.deltaTime;
+
+                // 経過時間が過ぎたらリセット
+                if (count > 5.0f)
+                {
+                    Destroy(Obj.gameObject);
+                    Destroy(flame.gameObject);
+                }
             }
         }
     }

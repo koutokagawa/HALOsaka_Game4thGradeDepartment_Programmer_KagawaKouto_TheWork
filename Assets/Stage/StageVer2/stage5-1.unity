@@ -5550,7 +5550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8259985518681839624, guid: 28ac077617c3aa9439659144432431ab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.9038353
+      value: 1.94
       objectReference: {fileID: 0}
     - target: {fileID: 8259985518681839624, guid: 28ac077617c3aa9439659144432431ab, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7605,6 +7605,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4612074316274735184, guid: 7a285848f410aa445b18dee8df0288ad, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612074316274735184, guid: 7a285848f410aa445b18dee8df0288ad, type: 3}
+      propertyPath: ObjectPosL
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5029254282342505500, guid: 7a285848f410aa445b18dee8df0288ad, type: 3}
+      propertyPath: Page1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5029254282342505500, guid: 7a285848f410aa445b18dee8df0288ad, type: 3}
       propertyPath: ObjectPosL
       value: 1
       objectReference: {fileID: 0}
@@ -17135,6 +17147,10 @@ PrefabInstance:
       propertyPath: character
       value: 
       objectReference: {fileID: 2143411350}
+    - target: {fileID: 9116962749697061906, guid: ea7113de3035f444d9241ff9ec616536, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea7113de3035f444d9241ff9ec616536, type: 3}
 --- !u!1001 &2013678830
@@ -22498,6 +22514,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1648283904}
     m_Modifications:
+    - target: {fileID: 444339333051219951, guid: baf888c0ac6781c43ac6fa70cf32b858, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 459266452384710760, guid: baf888c0ac6781c43ac6fa70cf32b858, type: 3}
       propertyPath: Page1
       value: 1
@@ -22537,6 +22557,10 @@ PrefabInstance:
     - target: {fileID: 4151568320749868611, guid: baf888c0ac6781c43ac6fa70cf32b858, type: 3}
       propertyPath: m_Name
       value: teapot (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4884365261764536628, guid: baf888c0ac6781c43ac6fa70cf32b858, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5408922406351163856, guid: baf888c0ac6781c43ac6fa70cf32b858, type: 3}
       propertyPath: m_RootOrder

@@ -212,32 +212,35 @@ public class MoveObjManager1 : MonoBehaviour
 
     void Update()
     {
-        // プレイヤーが地面にいるのか判定     falseなら地面にいる
-        if (character.GetComponent<RayPlayer>().DownCheck == true)
+        if (Obj != null)
         {
-            if (hit == false)
+            // プレイヤーが地面にいるのか判定     falseなら地面にいる
+            if (character.GetComponent<RayPlayer>().DownCheck == true)
             {
-                var rb = Obj.GetComponent<Rigidbody>();
-                float RstickX = Input.GetAxis("RstickX");
+                if (hit == false)
+                {
+                    var rb = Obj.GetComponent<Rigidbody>();
+                    float RstickX = Input.GetAxis("RstickX");
 
-                // スティックを倒している間
-                if (RstickX != 0)
-                {
-                    // Objに代入したオブジェクトを子オブジェクトにする
-                    Obj.gameObject.transform.parent = this.gameObject.transform;
-                }
-                else
-                {
-                    // このオブジェクトを子オブジェクトから外す
-                    Obj.gameObject.transform.parent = null;
+                    // スティックを倒している間
+                    if (RstickX != 0)
+                    {
+                        // Objに代入したオブジェクトを子オブジェクトにする
+                        Obj.gameObject.transform.parent = this.gameObject.transform;
+                    }
+                    else
+                    {
+                        // このオブジェクトを子オブジェクトから外す
+                        Obj.gameObject.transform.parent = null;
+                    }
                 }
             }
-        }
-        else
-        {
-            // Objに代入したオブジェクトを子オブジェクトにする
-            Obj.gameObject.transform.parent = this.gameObject.transform;
-        }
+            else
+            {
+                // Objに代入したオブジェクトを子オブジェクトにする
+                Obj.gameObject.transform.parent = this.gameObject.transform;
+            }
+        }  
     }
 }
 

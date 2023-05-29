@@ -10,7 +10,7 @@ public class FlameManager1 : MonoBehaviour
     [Header("characterオブジェクトを入れる")] public GameObject character;
 
     [Header("復活させるオブジェクト")]
-    public GameObject ReObj;
+    public GameObject Obj;
     public FrameObj1 script;
 
     [Header("ページが縦向きの状態だとしてのオブジェクトの位置")]
@@ -32,159 +32,166 @@ public class FlameManager1 : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (ObjectPosL == true)
+        if (Obj != null)
         {
-            if (Page1 == true)
+            if (ObjectPosL == true)
             {
-                if (other.gameObject.tag == "bookL2")
+                if (Page1 == true)
                 {
-                    ReObj.gameObject.SetActive(false);
-                    hit = true;
+                    if (other.gameObject.tag == "bookL2")
+                    {
+                        Obj.gameObject.SetActive(false);
+                        hit = true;
+                    }
+                }
+
+                if (Page2 == true)
+                {
+                    if (other.gameObject.tag == "pagehit2_page1" || other.gameObject.tag == "bookL2")
+                    {
+                        Obj.gameObject.SetActive(false);
+                        hit = true;
+                    }
+                }
+
+                if (Page3 == true)
+                {
+                    if (other.gameObject.tag == "pagehit2_page2" || other.gameObject.tag == "bookL2")
+                    {
+                        Obj.gameObject.SetActive(false);
+                        hit = true;
+                    }
+                }
+
+                if (Page4 == true)
+                {
+                    if (other.gameObject.tag == "pagehit2_page3" || other.gameObject.tag == "bookL2")
+                    {
+                        Obj.gameObject.SetActive(false);
+                        hit = true;
+                    }
                 }
             }
 
-            if (Page2 == true)
+            if (ObjectPosR == true)
             {
-                if (other.gameObject.tag == "pagehit2_page1" || other.gameObject.tag == "bookL2")
+                if (Page1 == true)
                 {
-                    ReObj.gameObject.SetActive(false);
-                    hit = true;
+                    if (other.gameObject.tag == "pagehit2_page2" || other.gameObject.tag == "bookR2")
+                    {
+                        Obj.gameObject.SetActive(false);
+                        hit = true;
+                    }
+                }
+
+                if (Page2 == true)
+                {
+                    if (other.gameObject.tag == "pagehit2_page3" || other.gameObject.tag == "bookR2")
+                    {
+                        Obj.gameObject.SetActive(false);
+                        hit = true;
+                    }
+                }
+
+                if (Page3 == true)
+                {
+                    if (other.gameObject.tag == "pagehit2_page4" || other.gameObject.tag == "bookR2")
+                    {
+                        Obj.gameObject.SetActive(false);
+                        hit = true;
+                    }
+                }
+
+                if (Page4 == true)
+                {
+                    if (other.gameObject.tag == "bookR2")
+                    {
+                        Obj.gameObject.SetActive(false);
+                        hit = true;
+                    }
                 }
             }
 
-            if (Page3 == true)
-            {
-                if (other.gameObject.tag == "pagehit2_page2" || other.gameObject.tag == "bookL2")
-                {
-                    ReObj.gameObject.SetActive(false);
-                    hit = true;
-                }
-            }
-
-            if (Page4 == true)
-            {
-                if (other.gameObject.tag == "pagehit2_page3" || other.gameObject.tag == "bookL2")
-                {
-                    ReObj.gameObject.SetActive(false);
-                    hit = true;
-                }
-            }
         }
-
-        if (ObjectPosR == true)
-        {
-            if (Page1 == true)
-            {
-                if (other.gameObject.tag == "pagehit2_page2" || other.gameObject.tag == "bookR2")
-                {
-                    ReObj.gameObject.SetActive(false);
-                    hit = true;
-                }
-            }
-
-            if (Page2 == true)
-            {
-                if (other.gameObject.tag == "pagehit2_page3" || other.gameObject.tag == "bookR2")
-                {
-                    ReObj.gameObject.SetActive(false);
-                    hit = true;
-                }
-            }
-
-            if (Page3 == true)
-            {
-                if (other.gameObject.tag == "pagehit2_page4" || other.gameObject.tag == "bookR2")
-                {
-                    ReObj.gameObject.SetActive(false);
-                    hit = true;
-                }
-            }
-
-            if (Page4 == true)
-            {
-                if (other.gameObject.tag == "bookR2")
-                {
-                    ReObj.gameObject.SetActive(false);
-                    hit = true;
-                }
-            }
-        }
-
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (ObjectPosL == true)
+        if (Obj != null)
         {
-            if (Page1 == true)
+
+            if (ObjectPosL == true)
             {
-                if (other.gameObject.tag == "bookL2")
+                if (Page1 == true)
                 {
-                    hit = false;
+                    if (other.gameObject.tag == "bookL2")
+                    {
+                        hit = false;
+                    }
+
+                    if (other.gameObject.tag == "pagehit2_page2" || other.gameObject.tag == "bookL2")
+                    {
+                        hit = false;
+                    }
                 }
 
-                if (other.gameObject.tag == "pagehit2_page2" || other.gameObject.tag == "bookL2")
+                if (Page2 == true)
                 {
-                    hit = false;
+                    if (other.gameObject.tag == "pagehit2_page1" || other.gameObject.tag == "bookL2")
+                    {
+                        hit = false;
+                    }
                 }
-            }
 
-            if (Page2 == true)
-            {
-                if (other.gameObject.tag == "pagehit2_page1" || other.gameObject.tag == "bookL2")
+                if (Page3 == true)
                 {
-                    hit = false;
+                    if (other.gameObject.tag == "pagehit2_page2" || other.gameObject.tag == "bookL2")
+                    {
+                        hit = false;
+                    }
                 }
-            }
 
-            if (Page3 == true)
-            {
-                if (other.gameObject.tag == "pagehit2_page2" || other.gameObject.tag == "bookL2")
+                if (Page4 == true)
                 {
-                    hit = false;
-                }
-            }
-
-            if (Page4 == true)
-            {
-                if (other.gameObject.tag == "pagehit2_page3" || other.gameObject.tag == "bookL2")
-                {
-                    hit = false;
-                }
-            }
-        }
-
-        if (ObjectPosR == true)
-        {
-            if (Page1 == true)
-            {
-                if (other.gameObject.tag == "pagehit2_page2" || other.gameObject.tag == "bookR2")
-                {
-                    hit = false;
+                    if (other.gameObject.tag == "pagehit2_page3" || other.gameObject.tag == "bookL2")
+                    {
+                        hit = false;
+                    }
                 }
             }
 
-            if (Page2 == true)
+            if (ObjectPosR == true)
             {
-                if (other.gameObject.tag == "pagehit2_page3" || other.gameObject.tag == "bookR2")
+                if (Page1 == true)
                 {
-                    hit = false;
+                    if (other.gameObject.tag == "pagehit2_page2" || other.gameObject.tag == "bookR2")
+                    {
+                        hit = false;
+                    }
                 }
-            }
 
-            if (Page3 == true)
-            {
-                if (other.gameObject.tag == "pagehit2_page4" || other.gameObject.tag == "bookR2")
+                if (Page2 == true)
                 {
-                    hit = false;
+                    if (other.gameObject.tag == "pagehit2_page3" || other.gameObject.tag == "bookR2")
+                    {
+                        hit = false;
+                    }
                 }
-            }
 
-            if (Page4 == true)
-            {
-                if (other.gameObject.tag == "bookR2")
+                if (Page3 == true)
                 {
-                    hit = false;
+                    if (other.gameObject.tag == "pagehit2_page4" || other.gameObject.tag == "bookR2")
+                    {
+                        hit = false;
+                    }
+                }
+
+                if (Page4 == true)
+                {
+                    if (other.gameObject.tag == "bookR2")
+                    {
+                        hit = false;
+                    }
                 }
             }
         }
@@ -198,45 +205,48 @@ public class FlameManager1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // プレイヤーが地面にいるのか判定     falseなら地面にいる
-        if (character.GetComponent<RayPlayer>().DownCheck == true)
+        if (Obj != null)
         {
-            if (hit == false)
+            // プレイヤーが地面にいるのか判定     falseなら地面にいる
+            if (character.GetComponent<RayPlayer>().DownCheck == true)
             {
-                // 炎に当たったら消す
-                if (script.hit == true)
+                if (hit == false)
                 {
-                    Destroy(ReObj.gameObject);
+                    // 炎に当たったら消す
+                    if (script.hit == true)
+                    {
+                        Destroy(Obj.gameObject);
+                    }
+                    else
+                    {
+                        Obj.gameObject.SetActive(true);
+                    }
+
+                    var rb = Obj.GetComponent<Rigidbody>();
+                    float RstickX = Input.GetAxis("RstickX");
+
+                    // スティックを倒している間
+                    if (RstickX != 0)
+                    {
+                        // Objに代入したオブジェクトを子オブジェクトにする
+                        Obj.gameObject.transform.parent = this.gameObject.transform;
+                    }
+                    else
+                    {
+                        // このオブジェクトを子オブジェクトから外す
+                        Obj.gameObject.transform.parent = null;
+                    }
                 }
                 else
                 {
-                    ReObj.gameObject.SetActive(true);
-                }
-
-                var rb = ReObj.GetComponent<Rigidbody>();
-                float RstickX = Input.GetAxis("RstickX");
-
-                // スティックを倒している間
-                if (RstickX != 0)
-                {
-                    // Objに代入したオブジェクトを子オブジェクトにする
-                    ReObj.gameObject.transform.parent = this.gameObject.transform;
-                }
-                else
-                {
-                    // このオブジェクトを子オブジェクトから外す
-                    ReObj.gameObject.transform.parent = null;
+                    Obj.gameObject.SetActive(false);
                 }
             }
             else
             {
-                ReObj.gameObject.SetActive(false);
+                // Objに代入したオブジェクトを子オブジェクトにする
+                Obj.gameObject.transform.parent = this.gameObject.transform;
             }
-        }
-        else
-        {
-            // Objに代入したオブジェクトを子オブジェクトにする
-            ReObj.gameObject.transform.parent = this.gameObject.transform;
         }
     }
 }
