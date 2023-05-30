@@ -497,6 +497,7 @@ public class RayPlayer2 : MonoBehaviour
     {
         if (other.collider.CompareTag("GoalObj"))
         {
+
             animator.SetBool("B_Joy", true);
         }
 
