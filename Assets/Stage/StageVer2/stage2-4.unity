@@ -15819,6 +15819,7 @@ MonoBehaviour:
   targetScaleX: 3800
   duration: 1
   scaleUp: 1
+  targetScaleXDown: 0.0006428797
 --- !u!183 &1563386910
 Cloth:
   m_ObjectHideFlags: 0
@@ -16762,6 +16763,7 @@ MonoBehaviour:
   targetScaleX: 3800
   duration: 1
   scaleUp: 1
+  targetScaleXDown: 0.0006428797
 --- !u!137 &1691279133
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -23957,7 +23959,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2143411350}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.77, y: 4.81, z: -2.77}
+  m_LocalPosition: {x: -14.77, y: 5.39, z: -2.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
