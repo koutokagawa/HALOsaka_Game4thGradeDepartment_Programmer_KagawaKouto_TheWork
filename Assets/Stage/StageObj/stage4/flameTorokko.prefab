@@ -5134,7 +5134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 0}
   Obj: {fileID: 5811431051297114243}
-  script: {fileID: 5271790097728962621}
+  script: {fileID: 7021662701510786322}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
