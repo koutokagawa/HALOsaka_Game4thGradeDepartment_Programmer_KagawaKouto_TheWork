@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //using static UnityEditor.PlayerSettings;
 
@@ -368,7 +369,11 @@ public class RayPlayer : MonoBehaviour
                 AnimPlay=false;
             }
         }
-       
+        //‰æ–Ê‘JˆÚ
+        if (AnimPlay == false)
+        {
+            SceneManager.LoadScene("Title");
+        }
     }
 
     private void FixedUpdate()
@@ -495,7 +500,7 @@ public class RayPlayer : MonoBehaviour
 
     private void OnCollisionStay(Collision other)
     {
-        if(other.collider.CompareTag("GoalTag"))
+        if(other.collider.CompareTag("GoalObj"))
         {
             animator.SetBool("B_Joy", true);
         }

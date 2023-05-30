@@ -4,6 +4,7 @@ using System.Diagnostics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem.XR.Haptics;
+using UnityEngine.SceneManagement;
 
 //using static UnityEditor.PlayerSettings;
 
@@ -367,6 +368,11 @@ public class RayPlayer3 : MonoBehaviour
                 AnimPlay = false;
             }
         }
+        //‰æ–Ê‘JˆÚ
+        if (AnimPlay == false)
+        {
+            SceneManager.LoadScene("Title");
+        }
     }
 
     private void FixedUpdate()
@@ -492,7 +498,7 @@ public class RayPlayer3 : MonoBehaviour
     }
     private void OnCollisionStay(Collision other)
     {
-        if (other.collider.CompareTag("GoalTag"))
+        if (other.collider.CompareTag("GoalObj"))
         {
             animator.SetBool("B_Joy", true);
         }

@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem.XR.Haptics;
+using UnityEngine.SceneManagement;
 
 //using static UnityEditor.PlayerSettings;
 
@@ -26,7 +28,7 @@ public class RayPlayer4 : MonoBehaviour
     #region//プライベート変数 
     private Animator anim = null;
     private Rigidbody rbplayer = null;
-   
+
 
     private GameObject pagemove;//pagemoveを参照するための変数
 
@@ -39,7 +41,7 @@ public class RayPlayer4 : MonoBehaviour
     private Vector3 targetVector;//ターゲットへの向き
 
     private Vector3 PVector;//プレイヤーの向きを格納する
-   
+
 
     private float RayYPos = -8.0f;
     [SerializeField] public bool DownCheck = false;//落下中かどうか判断するflg
@@ -57,7 +59,7 @@ public class RayPlayer4 : MonoBehaviour
 
     private float moveScale = 8.0f;
 
-   
+
     #endregion
 
     //Rayが当たったかどうか判断するための変数
@@ -92,10 +94,11 @@ public class RayPlayer4 : MonoBehaviour
         movetarget = StartObject;
         animator.SetBool("B_Joy", false);
         pagemove = GameObject.Find("ShaftManager");
+        Invoke("ChangeScene", 1.5f);
 
     }
 
-    
+
     void Update()
     {
         float naname = speed * 2 - speed;
@@ -106,7 +109,7 @@ public class RayPlayer4 : MonoBehaviour
         Vector3 RayStart;//実際にレイを飛ばす位置の格納
         Vector3 RayStartUnder;
 
-     
+
 
 
         //if (page.GetComponent<PageShaftVer2>().isUp == false)
@@ -114,7 +117,7 @@ public class RayPlayer4 : MonoBehaviour
         GetXSpeed();
         GetZSpeed();
 
-       
+
         //Ray Ray = new Ray(transform.position, transform.forward);
 
         animator.SetBool("B_Idle", true);
@@ -128,7 +131,7 @@ public class RayPlayer4 : MonoBehaviour
         RayStartUnder.z = this.transform.position.z;
         RayStartUnder.y = -3.6f;
 
-      
+
 
         //下のオブジェクトの取得
         if (Physics.Raycast(RayStartUnder, Vector3.down, out hitunder, 10.5f))
@@ -140,7 +143,7 @@ public class RayPlayer4 : MonoBehaviour
             ////当たったオブジェクトの名前をログに出す
             //UnityEngine.Debug.Log(hitunder.transform.name);
             //それが足場なら
-            if (hitunder.collider.CompareTag("Uptag_min") || hitunder.collider.CompareTag("Uptag_mid") || hitunder.collider.CompareTag("Uptag_lar")||hitunder.collider.CompareTag("Uptag_XL"))
+            if (hitunder.collider.CompareTag("Uptag_min") || hitunder.collider.CompareTag("Uptag_mid") || hitunder.collider.CompareTag("Uptag_lar") || hitunder.collider.CompareTag("Uptag_XL"))
             {
                 PagePos = true;
 
@@ -234,7 +237,7 @@ public class RayPlayer4 : MonoBehaviour
             {
                 if (movetarget.transform.parent != null)
                 {
-                    if (movetarget.transform.parent.CompareTag("Block_min") || movetarget.transform.parent.CompareTag("book") || movetarget.transform.parent.CompareTag("Block_mid") || movetarget.transform.parent.CompareTag("Block_lar")|| movetarget.transform.parent.CompareTag("block_XL") || movetarget.transform.parent.CompareTag("Uptag_min") || movetarget.transform.parent.CompareTag("Uptag_mid") || movetarget.transform.parent.CompareTag("Uptag_lar") || movetarget.transform.parent.CompareTag("Uptag_XL"))
+                    if (movetarget.transform.parent.CompareTag("Block_min") || movetarget.transform.parent.CompareTag("book") || movetarget.transform.parent.CompareTag("Block_mid") || movetarget.transform.parent.CompareTag("Block_lar") || movetarget.transform.parent.CompareTag("block_XL") || movetarget.transform.parent.CompareTag("Uptag_min") || movetarget.transform.parent.CompareTag("Uptag_mid") || movetarget.transform.parent.CompareTag("Uptag_lar") || movetarget.transform.parent.CompareTag("Uptag_XL"))
                     {
                         DownCheck = false;
                         RayYPos = -8.0f;
@@ -294,7 +297,7 @@ public class RayPlayer4 : MonoBehaviour
                     }
                     if (character.MaxUp == true)
                     {
-                     
+
                         UpCount = false;
                         Speed = 8.0f;
                     }
@@ -310,7 +313,7 @@ public class RayPlayer4 : MonoBehaviour
             gearStop = true;
         }
 
-            if (pagemove.GetComponent<ShaftManager4>().pageMove1 == false && pagemove.GetComponent<ShaftManager4>().pageMove2 == false && pagemove.GetComponent<ShaftManager4>().pageMove3 == false && pagemove.GetComponent<ShaftManager4>().pageMove4 == false)
+        if (pagemove.GetComponent<ShaftManager4>().pageMove1 == false && pagemove.GetComponent<ShaftManager4>().pageMove2 == false && pagemove.GetComponent<ShaftManager4>().pageMove3 == false && pagemove.GetComponent<ShaftManager4>().pageMove4 == false)
         {
             if (character.GetComponent<PlayerUp>().MaxUp == false) // プレイヤーが釣り上げられていない場合、当たり判定を付ける
             {
@@ -332,8 +335,8 @@ public class RayPlayer4 : MonoBehaviour
             col.enabled = false;
         }
 
-     //        Debug.Log("aaaaaaaaaaaaaaaaaaaaaaaaaaa");
-       if (UpCount == true)
+        //        Debug.Log("aaaaaaaaaaaaaaaaaaaaaaaaaaa");
+        if (UpCount == true)
         {
             movetarget = UpTarget;//移動先を真上にする
             DownCheck = true;
@@ -367,7 +370,14 @@ public class RayPlayer4 : MonoBehaviour
                 AnimPlay = false;
             }
         }
+        //画面遷移
+        if (AnimPlay == false)
+        {
+            SceneManager.LoadScene("Title");
+        }
     }
+
+   
 
     private void FixedUpdate()
     {
@@ -492,7 +502,7 @@ public class RayPlayer4 : MonoBehaviour
     }
     private void OnCollisionStay(Collision other)
     {
-        if (other.collider.CompareTag("GoalTag"))
+        if (other.collider.CompareTag("GoalObj"))
         {
             animator.SetBool("B_Joy", true);
         }
