@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3434618845875332085}
   - component: {fileID: 2934235662078682298}
   - component: {fileID: 3139781513278631274}
+  - component: {fileID: 7446850661158171458}
   m_Layer: 0
   m_Name: Stage2Goal
   m_TagString: GoalObj
@@ -115,3 +116,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3, y: 5.97, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7446850661158171458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199511409252219317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0107437721069634787eef6431aae442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
