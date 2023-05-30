@@ -130,7 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 0}
   Obj: {fileID: 5629831084513086083}
-  script: {fileID: 8966369518055520812}
+  script: {fileID: 6823229133602476873}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0

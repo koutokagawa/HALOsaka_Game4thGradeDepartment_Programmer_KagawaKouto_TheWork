@@ -79,9 +79,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 375366d4ae5ccc646be7e4d79a758bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 6986515714969495055}
-  Obj: {fileID: 0}
-  script: {fileID: 0}
+  character: {fileID: 0}
+  Obj: {fileID: 6986515714969495055}
+  script: {fileID: 3404134877965608852}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
@@ -102,8 +102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  Obj: {fileID: 0}
-  script: {fileID: 0}
+  Obj: {fileID: 6986515714969495055}
+  script: {fileID: 2232798614106317608}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
@@ -124,8 +124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  Obj: {fileID: 0}
-  script: {fileID: 0}
+  Obj: {fileID: 6986515714969495055}
+  script: {fileID: 5951838932903857802}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
@@ -146,8 +146,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  Obj: {fileID: 0}
-  script: {fileID: 0}
+  Obj: {fileID: 6986515714969495055}
+  script: {fileID: 7110314003673880023}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0

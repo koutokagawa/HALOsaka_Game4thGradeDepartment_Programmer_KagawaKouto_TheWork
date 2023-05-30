@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  ReObj: {fileID: 3345429554860836924}
+  Obj: {fileID: 3345429554860836924}
   script: {fileID: 1011147025560518901}
   ObjectPosL: 0
   ObjectPosR: 0
@@ -102,8 +102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  ReObj: {fileID: 3345429554860836924}
-  script: {fileID: 1011147025560518901}
+  Obj: {fileID: 3345429554860836924}
+  script: {fileID: 3708082145846836837}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
@@ -124,8 +124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  ReObj: {fileID: 3345429554860836924}
-  script: {fileID: 1011147025560518901}
+  Obj: {fileID: 3345429554860836924}
+  script: {fileID: 8818611632775689370}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
@@ -146,8 +146,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  ReObj: {fileID: 3345429554860836924}
-  script: {fileID: 1011147025560518901}
+  Obj: {fileID: 0}
+  script: {fileID: 0}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0

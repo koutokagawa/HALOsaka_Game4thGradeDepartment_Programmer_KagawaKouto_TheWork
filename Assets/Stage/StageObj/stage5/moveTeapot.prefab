@@ -9933,7 +9933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 0}
   Obj: {fileID: 523059155029014699}
-  script: {fileID: 4293689814104638709}
+  script: {fileID: 7021981176989216606}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
