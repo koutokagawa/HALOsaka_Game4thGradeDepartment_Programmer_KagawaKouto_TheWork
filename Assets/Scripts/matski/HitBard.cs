@@ -64,20 +64,28 @@ public class HitBard : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.name == "characterHit")
+        if (other.gameObject.tag == "Player")
         {
-            if (this.CompareTag("Bard_1"))
-            {
-                this.transform.position = new Vector3(-13.0f, 17.3f, -12.5f);
+            isFadeOut = true;
+            
+            if((alfa <= 0))
+                {
+                
+                if (this.CompareTag("Bard_1"))
+                {
+                    this.transform.position = new Vector3(-13.0f, 17.3f, -12.5f);
+                }
+                else if (this.CompareTag("Bard_2"))
+                {
+                    this.transform.position = new Vector3(-11.0f, 17.3f, -12.5f);
+                }
+                else if (this.CompareTag("Bard_3"))
+                {
+                    this.transform.position = new Vector3(-9.0f, 17.3f, -12.5f);
+                }
+                isFadeIn = true;
             }
-            else if (this.CompareTag("Bard_2"))
-            {
-                this.transform.position = new Vector3(-11.0f, 17.3f, -12.5f);
-            }
-            else if (this.CompareTag("Bard_3"))
-            {
-                this.transform.position = new Vector3(-9.0f, 17.3f, -12.5f);
-            }
+           
         }
     }
 }
