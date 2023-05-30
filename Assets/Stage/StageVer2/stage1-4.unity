@@ -24911,7 +24911,6 @@ GameObject:
   - component: {fileID: 1344321404}
   - component: {fileID: 1344321402}
   - component: {fileID: 1344321401}
-  - component: {fileID: 1344321400}
   - component: {fileID: 1344321405}
   m_Layer: 0
   m_Name: playerUpTarget
@@ -24920,18 +24919,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1344321400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1344321399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801c01d1c7fb28e4fb83f2f4dbc7708d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1344321401
 Rigidbody:
   m_ObjectHideFlags: 0
