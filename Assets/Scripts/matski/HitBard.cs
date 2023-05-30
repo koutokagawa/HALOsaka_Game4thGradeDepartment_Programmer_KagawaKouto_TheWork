@@ -11,6 +11,10 @@ public class HitBard : MonoBehaviour
     public bool isFadeOut = false;  // フェードアウト処理の開始、完了を管理
     public bool isFadeIn = false;   // フェードイン処理の開始、完了を管理
 
+    private int a = 0;
+
+    [SerializeField] private bool Birdflg;
+
     Renderer fadeMaterial;          // Materialにアクセスする容器
     // Start is called before the first frame update
     void Start()
@@ -21,6 +25,7 @@ public class HitBard : MonoBehaviour
         blue = fadeMaterial.material.color.b;
         alfa = fadeMaterial.material.color.a;
         isFadeIn = true;
+        Birdflg = false;
     }
 
     // Update is called once per frame
@@ -33,6 +38,31 @@ public class HitBard : MonoBehaviour
         if (isFadeOut)
         {
             StartFadeOut(); //boolにチェックが入っていたら実行     
+        }
+
+        if(Birdflg==true)
+        {
+         
+
+            if ((alfa <= 0))
+            {
+
+                if (this.CompareTag("Bard_1"))
+                {
+                    this.transform.position = new Vector3(-7.8f, 19.3f, -15.5f);
+                }
+                else if (this.CompareTag("Bard_2"))
+                {
+                    this.transform.position = new Vector3(-5.8f, 19.3f, -15.5f);
+                }
+                else if (this.CompareTag("Bard_3"))
+                {
+                    this.transform.position = new Vector3(-3.8f, 19.3f, -15.5f);
+                }
+                isFadeIn = true;
+            }
+          
+            
         }
     }
 
@@ -66,26 +96,8 @@ public class HitBard : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            Birdflg = true;
             isFadeOut = true;
-            
-            if((alfa <= 0))
-                {
-                
-                if (this.CompareTag("Bard_1"))
-                {
-                    this.transform.position = new Vector3(-13.0f, 17.3f, -12.5f);
-                }
-                else if (this.CompareTag("Bard_2"))
-                {
-                    this.transform.position = new Vector3(-11.0f, 17.3f, -12.5f);
-                }
-                else if (this.CompareTag("Bard_3"))
-                {
-                    this.transform.position = new Vector3(-9.0f, 17.3f, -12.5f);
-                }
-                isFadeIn = true;
-            }
-           
         }
     }
 }
