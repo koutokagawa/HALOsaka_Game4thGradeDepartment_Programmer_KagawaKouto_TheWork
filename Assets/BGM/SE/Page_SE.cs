@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Flame : MonoBehaviour
+public class Page_SE : MonoBehaviour
 {
-    public AudioSource ad;
 
+    public AudioSource ad;
 
     // Start is called before the first frame update
     void Start()

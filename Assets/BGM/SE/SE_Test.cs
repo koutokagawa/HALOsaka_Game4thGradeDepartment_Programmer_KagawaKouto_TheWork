@@ -23,9 +23,13 @@ public class SE_Test : MonoBehaviour
         //if (!(-0.01f <= LstickX && LstickX <= 0.01f) || !(-0.01f <= LstickY && LstickY <= 0.01f))
         if (RP.NowMoveflg)
         {
-            if (ad.isPlaying == false)
+
+            if (RP.DownCheck != true)
             {
-                ad.Play();
+                if (ad.isPlaying == false)
+                {
+                    ad.Play();
+                }
             }
         }
         else
@@ -34,3 +38,4 @@ public class SE_Test : MonoBehaviour
         }
     }
 }
+
