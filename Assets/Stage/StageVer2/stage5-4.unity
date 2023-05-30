@@ -10465,6 +10465,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b93b835e34a18a44aac6e5843d37f93d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Obj: {fileID: 0}
+  flame: {fileID: 0}
+  ObjectPosL: 0
+  ObjectPosR: 0
+  Page1: 0
+  Page2: 0
+  Page3: 0
+  Page4: 0
+  hit: 0
+  flameHit: 0
 --- !u!4 &1180561730 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8259985518681839624, guid: 28ac077617c3aa9439659144432431ab, type: 3}
@@ -11184,7 +11194,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7118713926818338429, guid: 02b482ec3dc14184d95bc0ae9825f42b, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 8890325902820317841, guid: 02b482ec3dc14184d95bc0ae9825f42b, type: 3}
       propertyPath: character
@@ -11362,7 +11372,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7118713926818338429, guid: 02b482ec3dc14184d95bc0ae9825f42b, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7118713926818338429, guid: 02b482ec3dc14184d95bc0ae9825f42b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17289,6 +17299,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2144671290}
     m_Modifications:
+    - target: {fileID: 7118713926818338429, guid: 02b482ec3dc14184d95bc0ae9825f42b, type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
     - target: {fileID: 8890325902820317841, guid: 02b482ec3dc14184d95bc0ae9825f42b, type: 3}
       propertyPath: character
       value: 
@@ -24777,7 +24791,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7118713926818338429, guid: 02b482ec3dc14184d95bc0ae9825f42b, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7118713926818338429, guid: 02b482ec3dc14184d95bc0ae9825f42b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26163,7 +26177,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7118713926818338429, guid: 02b482ec3dc14184d95bc0ae9825f42b, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8890325902820317841, guid: 02b482ec3dc14184d95bc0ae9825f42b, type: 3}
       propertyPath: character
