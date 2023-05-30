@@ -5,8 +5,8 @@ using UnityEngine.InputSystem;
 
 public class RotatePage2 : MonoBehaviour
 {
-    private const float LeftRotationAngle = 176.55f;  // 左回転の目標角度
-    private const float RightRotationAngle = 7.82f;   // 右回転の目標角度
+    private const float LeftRotationAngle = 176.55f;  // 左側
+    private const float RightRotationAngle = 8.43f;   // 右側
     private const float rotationTime = 0.5f;          // 回転にかかる時間
 
     public GameObject RotatePage3Object;  // RotatePage3オブジェクトへの参照
@@ -33,7 +33,7 @@ public class RotatePage2 : MonoBehaviour
         }
         else if (gamepad.dpad.left.wasPressedThisFrame)
         {
-            if (Mathf.Abs(transform.eulerAngles.z - LeftRotationAngle) < 0.01f)
+            if (Mathf.Abs(transform.eulerAngles.z - RightRotationAngle) < 0.01f)
             {
                 RotatePage3Object.GetComponent<RotatePage3>().enabled = false;
                 isRotatePage3Enabled = false;

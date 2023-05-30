@@ -30,7 +30,7 @@ public class Cursolstageselect : MonoBehaviour
     // メインカメラ
     public Camera mainCamera;
 
-    void Start()
+    void OnEnable()
     {
         // ステージブックの位置とカメラの位置をリストに追加
         destinationPositions = new List<Vector3>
@@ -44,11 +44,11 @@ public class Cursolstageselect : MonoBehaviour
 
         cameraPositions = new List<Vector3>
         {
-            new Vector3(-57.11f, 31.94f, 101.22f),  // stage1bookのカメラ位置
-            new Vector3(-32.2f, 5.7f, 97.6f),   // stage2bookのカメラ位置
-            new Vector3(-1.4f, 31.94f, 101.22f), // stage3bookのカメラ位置
-            new Vector3(28f, 5.7f, 97.6f),  // stage4bookのカメラ位置
-            new Vector3(53.4f, 31.94f, 101.22f)   // stage5bookのカメラ位置
+            new Vector3(-57.11f, 34f, 94.46f),  // stage1bookのカメラ位置
+            new Vector3(-32.2f, 5.7f, 90.84f),   // stage2bookのカメラ位置
+            new Vector3(-1.4f, 34f, 94.46f), // stage3bookのカメラ位置
+            new Vector3(28f, 5.7f, 90.84f),  // stage4bookのカメラ位置
+            new Vector3(53.4f, 34f, 94.46f)   // stage5bookのカメラ位置
         };
 
         // 各ステージブックからスクリプトを取得

@@ -5,8 +5,8 @@ using UnityEngine.InputSystem;
 
 public class RotatePage3 : MonoBehaviour
 {
-    private const float LeftRotationAngle = 176.28f;
-    private const float RightRotationAngle = 8f;
+    private const float LeftRotationAngle = 176.28f;    // 左側
+    private const float RightRotationAngle = 8f;        // 右側
     private const float rotationTime = 0.5f;
 
     public GameObject RotatePage2Object;
@@ -52,16 +52,18 @@ public class RotatePage3 : MonoBehaviour
             }
 
 
-            // スクリプトがRightRotationAngle = 8fの状態で左ボタンが押された場合、スクリプトを無効化
-            if (Mathf.Abs(transform.eulerAngles.z - RightRotationAngle) < 0.01f)
+            StartCoroutine(RotateZOverTime(RightRotationAngle, rotationTime));
+
+            // スクリプトがLeftRotationAngle = 176.28fの状態で左ボタンが押された場合、RotatePage4スクリプトを無効化
+            if (Mathf.Abs(transform.eulerAngles.z - LeftRotationAngle) < 0.01f)
             {
                 this.enabled = false;
+
                 RotatePage4Object.GetComponent<RotatePage4>().enabled = false;
                 isRotatePage4Enabled = false;
                 return;
             }
 
-            StartCoroutine(RotateZOverTime(RightRotationAngle, rotationTime));
         }
 
         // 8度のとき、RotatePage2スクリプトを有効化
