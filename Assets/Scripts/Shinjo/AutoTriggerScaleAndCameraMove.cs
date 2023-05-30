@@ -2,10 +2,9 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class TriggerScaleAndCameraMove : MonoBehaviour
+public class AutoTriggerScaleAndCameraMove : MonoBehaviour
 {
     // ScaleXOverTime スクリプトを参照する
-    public GameObject objectToDeactivate;
     public GameObject objectToScaleLeft;
     public GameObject objectToScaleRight;
     [SerializeField] private GameObject stageSelectCube;
@@ -21,19 +20,12 @@ public class TriggerScaleAndCameraMove : MonoBehaviour
     // カメラ参照
     [SerializeField] private Camera mainCamera;
 
-    // Update is called once per frame
-    private void Update()
+    private void OnEnable()
     {
-        // Aボタンが押されたら、ScaleXOverTimeのBeginScalingを呼び出し、スケーリングを開始し、カメラを移動する
-        if (Gamepad.current.aButton.wasPressedThisFrame)
-        {
-            objectToDeactivate.SetActive(false);
-
-            // オブジェクトの左右のScaleXOverTimeスクリプトを有効化して実行
-            EnableAndRunScaleScript(objectToScaleLeft, false);
-            EnableAndRunScaleScript(objectToScaleRight, false);
-            StartCoroutine(MoveCameraToPosition(mainCamera, newCameraPosition, moveDuration));
-        }
+        // オブジェクトの左右のScaleXOverTimeスクリプトを有効化して実行
+        EnableAndRunScaleScript(objectToScaleLeft, false);
+        EnableAndRunScaleScript(objectToScaleRight, false); 
+        StartCoroutine(MoveCameraToPosition(mainCamera, newCameraPosition, moveDuration));
     }
 
     // カメラを指定位置に移動させるコルーチン

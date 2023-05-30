@@ -7,7 +7,7 @@ public class StageBookAnimatorController : MonoBehaviour
     private float animationLength;
 
     // Inspector上で設定するプレハブ化されたBookオブジェクトへの参照
-    public GameObject stage1Book;
+    public GameObject stageBook;
 
     void Start()
     {
@@ -30,8 +30,9 @@ public class StageBookAnimatorController : MonoBehaviour
     {
         yield return new WaitForSeconds(animationLength);
 
-        SceneController sceneController = stage1Book.GetComponent<SceneController>();
-        Parentalseparation parentalSeparation = stage1Book.GetComponent<Parentalseparation>();
+        SceneController sceneController = stageBook.GetComponent<SceneController>();
+        Parentalseparation parentalSeparation = stageBook.GetComponent<Parentalseparation>();
+        SwitchAnimation switchAnimation = stageBook.GetComponent<SwitchAnimation>();
 
         if (sceneController != null)
         {
@@ -43,7 +44,12 @@ public class StageBookAnimatorController : MonoBehaviour
             parentalSeparation.enabled = true;
         }
 
-        GameObject rotatePage2Obj = stage1Book.transform.Find("RotatePage2").gameObject;
+        if (switchAnimation != null)
+        {
+            switchAnimation.enabled = true;
+        }
+
+        GameObject rotatePage2Obj = stageBook.transform.Find("RotatePage2").gameObject;
         if (rotatePage2Obj != null)
         {
             RotatePage2 rotatePage = rotatePage2Obj.GetComponent<RotatePage2>();

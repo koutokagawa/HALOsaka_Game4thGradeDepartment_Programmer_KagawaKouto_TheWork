@@ -46,6 +46,7 @@ public class ScaleXOverTime : MonoBehaviour
             if (onScalingComplete != null) // スケーリング完了時のアクションが設定されていれば
             {
                 onScalingComplete.Invoke(); // それを実行
+                //Time.timeScale = 0;
             }
         }
 

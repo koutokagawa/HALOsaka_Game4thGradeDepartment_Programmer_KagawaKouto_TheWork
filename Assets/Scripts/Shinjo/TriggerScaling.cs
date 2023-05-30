@@ -6,6 +6,9 @@ public class TriggerScaling : MonoBehaviour
 {
     // ScaleXOverTime スクリプトを参照する
     public GameObject objectToActivate;
+    public GameObject objectsToDeactivate;
+    //public GameObject MainCamera;
+
     public GameObject objectToScaleLeft;
     public GameObject objectToScaleRight;
 
@@ -21,6 +24,7 @@ public class TriggerScaling : MonoBehaviour
             // オブジェクトの左右のScaleXOverTimeスクリプトを有効化して実行
             EnableAndRunScaleScript(objectToScaleLeft, true);
             EnableAndRunScaleScript(objectToScaleRight, true);
+            //MainCamera.GetComponent<TriggerScaleAndCameraMove>().enabled = false;
         }
     }
 
@@ -41,6 +45,7 @@ public class TriggerScaling : MonoBehaviour
         if (finishedScalingCount >= 2)
         {
             objectToActivate.SetActive(true);
+            objectsToDeactivate.SetActive(false);
         }
     }
 }

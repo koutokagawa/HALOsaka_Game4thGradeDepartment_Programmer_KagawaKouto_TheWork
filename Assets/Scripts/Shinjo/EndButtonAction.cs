@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class EndButtonAction : MonoBehaviour
 {
+    public string sceneToLoad;
+
     public void ButtonClicked(UnityEngine.UI.Button button)
     {
-        GameEnd();
+        SceneManager.LoadScene(sceneToLoad);
     }
 
 
