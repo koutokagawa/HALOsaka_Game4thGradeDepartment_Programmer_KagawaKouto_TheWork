@@ -18,22 +18,19 @@ public class Flame3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (obj != null)
+        // オブジェクトの位置をobjと同じ位置にする
+        flame.transform.position = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z);
+
+        if (obj.GetComponent<MoveObj3>().flameHit == true)
         {
-            // オブジェクトの位置をobjと同じ位置にする
-            flame.transform.position = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z);
+            flame.gameObject.SetActive(true);
+            count += Time.deltaTime;
 
-            if (obj.GetComponent<MoveObj3>().flameHit == true)
+            // 経過時間が過ぎたらリセット
+            if (count > 5.0f)
             {
-                flame.gameObject.SetActive(true);
-                count += Time.deltaTime;
-
-                // 経過時間が過ぎたらリセット
-                if (count > 5.0f)
-                {
-                    Destroy(obj.gameObject);
-                    Destroy(flame.gameObject);
-                }
+                Destroy(obj.gameObject);
+                Destroy(flame.gameObject);
             }
         }
     }

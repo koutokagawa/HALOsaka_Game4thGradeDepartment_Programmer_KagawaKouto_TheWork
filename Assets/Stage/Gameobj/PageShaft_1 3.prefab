@@ -1132,8 +1132,6 @@ MonoBehaviour:
   hitcheck: {fileID: 7911402189956896452}
   upChrck: {fileID: 0}
   character: {fileID: 0}
-  checkL: 0
-  checkR: 0
 --- !u!1 &8463374274317683318
 GameObject:
   m_ObjectHideFlags: 0

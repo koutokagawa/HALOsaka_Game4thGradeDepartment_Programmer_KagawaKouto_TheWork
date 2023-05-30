@@ -19,10 +19,10 @@ public class pageObj : MonoBehaviour
     public bool Page4 = false;
 
     private bool hit = false;
-    public bool flameHit = false;
+    private bool flameHit = true;
 
 
-    void OnCollisionStay(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "flame")
         {
@@ -32,11 +32,6 @@ public class pageObj : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "flame")
-        {
-            flameHit = true;
-        }
-
         if (ObjectPosL == true)
         {
             if (Page1 == true)
@@ -105,16 +100,16 @@ public class pageObj : MonoBehaviour
                     hit = true;
                 }
             }
+        }
+
+        if (other.gameObject.tag == "bookUnderHit")
+        {
+            Obj.gameObject.SetActive(false);
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "flame")
-        {
-            flameHit = false;
-        }
-
         if (ObjectPosL == true)
         {
             if (Page1 == true)
@@ -183,6 +178,11 @@ public class pageObj : MonoBehaviour
                     hit = false;
                 }
             }
+        }
+
+        if (other.gameObject.tag == "bookUnderHit")
+        {
+            Obj.gameObject.SetActive(false);
         }
     }
 
@@ -203,7 +203,7 @@ public class pageObj : MonoBehaviour
 
         if (flameHit == true)
         {
-            Obj.gameObject.SetActive(false);
+            Obj.gameObject.SetActive(true);
         }
 
         if (hit == true)

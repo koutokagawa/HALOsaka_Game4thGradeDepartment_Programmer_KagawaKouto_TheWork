@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 337977197987942674}
   - component: {fileID: 2673093296805604401}
   - component: {fileID: 8172148497293266726}
+  - component: {fileID: 9209341502793296490}
   m_Layer: 0
   m_Name: yatai01
   m_TagString: Untagged
@@ -102,6 +103,28 @@ MonoBehaviour:
   character: {fileID: 0}
   Obj: {fileID: 8832044681624708532}
   script: {fileID: 1449980004308874183}
+  ObjectPosL: 0
+  ObjectPosR: 0
+  Page1: 0
+  Page2: 0
+  Page3: 0
+  Page4: 0
+  hit: 0
+--- !u!114 &9209341502793296490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4770665760221114217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8122ff24077cd445898d284197d6263, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 0}
+  Obj: {fileID: 8832044681624708532}
+  script: {fileID: 2449538299153219465}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
@@ -385,6 +408,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: yatai_uv
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 731151b3733bdf4448cd714738fa7fe2, type: 3}
+      propertyPath: m_TagString
+      value: moveobj
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 731151b3733bdf4448cd714738fa7fe2, type: 3}
 --- !u!4 &8203985620732624654 stripped
@@ -405,7 +432,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8832044681624708532}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 10000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1

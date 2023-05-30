@@ -9965,7 +9965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 0}
   Obj: {fileID: 8380898203069443712}
-  script: {fileID: 2952967108456831877}
+  script: {fileID: 4400252650860899358}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
@@ -10007,7 +10007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c56ee7c5d5718b40a7f42a217c87d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 8380898203069443712}
+  Obj: {fileID: 0}
   flame: {fileID: 5085899169431265685}
   count: 0
 --- !u!114 &6768692097229168857

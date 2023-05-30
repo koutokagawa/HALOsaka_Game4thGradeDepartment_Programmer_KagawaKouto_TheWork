@@ -5213,7 +5213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 0}
   Obj: {fileID: 7677108520405782206}
-  script: {fileID: 5872492855808235116}
+  script: {fileID: 8574198942931125037}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0

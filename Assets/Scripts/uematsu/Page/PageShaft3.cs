@@ -22,8 +22,8 @@ public class PageShaft3 : MonoBehaviour
     private int cnt = 0;
 
     private bool checkA = false;
-    public bool checkL = false;
-    public bool checkR = false;
+    private bool checkL = false;
+    private bool checkR = false;
 
     void Start()
     {
@@ -57,7 +57,7 @@ public class PageShaft3 : MonoBehaviour
     void FixedUpdate()
     {
         // プレイヤーが地面にいるのか判定     falseなら地面にいる
-        if (character.GetComponent<RayPlayer3>().DownCheck == false && upChrck.GetComponent<PlayerUp>().MaxUp == false)
+        if (character.GetComponent<RayPlayer2>().DownCheck == false && upChrck.GetComponent<PlayerUp>().MaxUp == false)
         {
             RotationB();
         }

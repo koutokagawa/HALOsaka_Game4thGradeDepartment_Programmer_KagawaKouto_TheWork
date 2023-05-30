@@ -9824,7 +9824,7 @@ GameObject:
   - component: {fileID: 3629145752728365198}
   m_Layer: 0
   m_Name: moveTeapot
-  m_TagString: Untagged
+  m_TagString: moveobj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9933,7 +9933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 0}
   Obj: {fileID: 523059155029014699}
-  script: {fileID: 4293689814104638709}
+  script: {fileID: 7021981176989216606}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
@@ -10049,8 +10049,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9205329269121813154}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00016185922, y: -0.20805138, z: 0}
-  m_LocalScale: {x: 0.0654895, y: 0.053274464, z: 0.07770434}
+  m_LocalPosition: {x: -0.0013409542, y: -0.275, z: 0}
+  m_LocalScale: {x: 0.07747712, y: 0.06302617, z: 0.09192784}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1004370952141709448}
@@ -10099,23 +10099,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 012d4c2d563ce984fbc5a671255d1ef0, type: 3}
       propertyPath: m_LocalScale.x
-      value: 49.00679
+      value: 41.424236
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 012d4c2d563ce984fbc5a671255d1ef0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 49.00679
+      value: 41.424236
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 012d4c2d563ce984fbc5a671255d1ef0, type: 3}
       propertyPath: m_LocalScale.z
-      value: 49.00679
+      value: 41.424236
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 012d4c2d563ce984fbc5a671255d1ef0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0079322
+      value: 0.055548
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 012d4c2d563ce984fbc5a671255d1ef0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5093
+      value: -2.1366
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 012d4c2d563ce984fbc5a671255d1ef0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10160,10 +10160,6 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 012d4c2d563ce984fbc5a671255d1ef0, type: 3}
       propertyPath: m_Name
       value: teapot
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 012d4c2d563ce984fbc5a671255d1ef0, type: 3}
-      propertyPath: m_TagString
-      value: moveobj
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 012d4c2d563ce984fbc5a671255d1ef0, type: 3}

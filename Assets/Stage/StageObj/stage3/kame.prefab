@@ -125,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 0}
   Obj: {fileID: 3345429554860836924}
-  script: {fileID: 3708082145846836837}
+  script: {fileID: 8818611632775689370}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
@@ -146,8 +146,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  Obj: {fileID: 3345429554860836924}
-  script: {fileID: 6416747247362090799}
+  Obj: {fileID: 0}
+  script: {fileID: 0}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
@@ -430,6 +430,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2fb5a824f092e714dbb3f108aef72cbb, type: 3}
       propertyPath: m_Name
       value: kame_ob
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2fb5a824f092e714dbb3f108aef72cbb, type: 3}
+      propertyPath: m_TagString
+      value: moveobj
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fb5a824f092e714dbb3f108aef72cbb, type: 3}
