@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.HID;
 
 public class HitBard : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class HitBard : MonoBehaviour
     private int a = 0;
 
     [SerializeField] private bool Birdflg;
+    [SerializeField] private GameObject SetBird;
 
     Renderer fadeMaterial;          // Materialにアクセスする容器
     // Start is called before the first frame update
@@ -60,6 +62,7 @@ public class HitBard : MonoBehaviour
                     this.transform.position = new Vector3(-3.8f, 19.3f, -15.5f);
                 }
                 isFadeIn = true;
+                this.gameObject.transform.parent = SetBird.transform;
             }
           
             
