@@ -19498,6 +19498,7 @@ MonoBehaviour:
   targetScaleX: 3800
   duration: 1
   scaleUp: 1
+  targetScaleXDown: 0.0006428797
 --- !u!183 &1563386910
 Cloth:
   m_ObjectHideFlags: 0
@@ -20153,6 +20154,7 @@ MonoBehaviour:
   targetScaleX: 3800
   duration: 1
   scaleUp: 1
+  targetScaleXDown: 0.0006428797
 --- !u!137 &1691279133
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
