@@ -19,21 +19,22 @@ public class Flame_SE : MonoBehaviour
 
     private void Update()
     {
-        bool isActive = targetObject.activeSelf;
 
 
         if (targetObject != null && !audioSource.isPlaying)
         {
+            bool isActive = targetObject.activeSelf;
             // アクティブかどうかに応じて処理を行う
             if (isActive)
             {
                 // オブジェクトが存在しており、SEが再生されていない場合
                 PlaySoundEffect();
             }
-            //else
-            //{
-            //    Debug.Log("オブジェクトは非アクティブです");
-            //}
+
+            else
+            {
+                Debug.Log("オブジェクトは非アクティブです");
+            }
         }
     }
 
