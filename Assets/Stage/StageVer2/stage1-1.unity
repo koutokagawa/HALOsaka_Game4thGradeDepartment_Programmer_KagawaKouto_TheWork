@@ -20562,6 +20562,10 @@ PrefabInstance:
       propertyPath: character
       value: 
       objectReference: {fileID: 2143411350}
+    - target: {fileID: 5878587556961177120, guid: bd18e29dc7f91f14ea062d75d031b8f0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7911402189956896455, guid: bd18e29dc7f91f14ea062d75d031b8f0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -20612,6 +20616,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7911402191669419119, guid: bd18e29dc7f91f14ea062d75d031b8f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972943187467216934, guid: bd18e29dc7f91f14ea062d75d031b8f0, type: 3}
+      propertyPath: upChrck
+      value: 
+      objectReference: {fileID: 1563115792}
+    - target: {fileID: 7972943187467216934, guid: bd18e29dc7f91f14ea062d75d031b8f0, type: 3}
+      propertyPath: hitcheck
+      value: 
+      objectReference: {fileID: 1115188549}
+    - target: {fileID: 7972943187467216934, guid: bd18e29dc7f91f14ea062d75d031b8f0, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 2143411350}
+    - target: {fileID: 7972943187467216934, guid: bd18e29dc7f91f14ea062d75d031b8f0, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -21320,7 +21340,7 @@ PrefabInstance:
       objectReference: {fileID: 2143411350}
     - target: {fileID: 5878587556961177120, guid: bd18e29dc7f91f14ea062d75d031b8f0, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7911402189956896455, guid: bd18e29dc7f91f14ea062d75d031b8f0, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -28184,7 +28204,7 @@ MonoBehaviour:
   DownCheck: 0
   UpCount: 0
   PagePos: 0
-  page: {fileID: 0}
+  page: {fileID: 1147444174}
   gb: []
   NowMoveflg: 0
   character: {fileID: 1563115792}
