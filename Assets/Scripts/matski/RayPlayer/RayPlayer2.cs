@@ -495,8 +495,9 @@ public class RayPlayer2 : MonoBehaviour
 
     private void OnCollisionStay(Collision other)
     {
-        if (other.collider.CompareTag("GoalTag"))
+        if (other.collider.CompareTag("GoalObj"))
         {
+
             animator.SetBool("B_Joy", true);
         }
 
