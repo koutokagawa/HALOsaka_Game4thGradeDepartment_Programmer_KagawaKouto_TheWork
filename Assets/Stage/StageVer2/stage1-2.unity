@@ -6448,6 +6448,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2419794326405438143, guid: c42bc2adf79ffbf49a2194f9d7f39b91, type: 3}
   m_PrefabInstance: {fileID: 520610589}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &530633862 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6986515714969495055, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
+  m_PrefabInstance: {fileID: 1629186163}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &567721440
 GameObject:
   m_ObjectHideFlags: 0
@@ -13020,7 +13025,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3404134877965608852, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
   m_PrefabInstance: {fileID: 1629186163}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 530633862}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8498b1d1f6df9eb4797c418c2d322fc5, type: 3}
@@ -13883,6 +13888,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6116198816617804136, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
+      propertyPath: Obj
+      value: 
+      objectReference: {fileID: 1999664965}
+    - target: {fileID: 6116198816617804136, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: Page1
       value: 1
       objectReference: {fileID: 0}
@@ -14656,6 +14665,10 @@ PrefabInstance:
       propertyPath: ObjectPosR
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6116198816617804136, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
+      propertyPath: Obj
+      value: 
+      objectReference: {fileID: 1954434169}
     - target: {fileID: 6116198816617804136, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: Page1
       value: 1
@@ -20522,6 +20535,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6116198816617804136, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
+      propertyPath: Obj
+      value: 
+      objectReference: {fileID: 530633862}
     - target: {fileID: 6116198816617804136, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: Page1
       value: 1
