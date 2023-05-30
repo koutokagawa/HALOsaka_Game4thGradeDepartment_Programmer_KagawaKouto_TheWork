@@ -19,10 +19,10 @@ public class pageObj : MonoBehaviour
     public bool Page4 = false;
 
     private bool hit = false;
-    private bool flameHit = true;
+    public bool flameHit = false;
 
 
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.tag == "flame")
         {
@@ -32,6 +32,11 @@ public class pageObj : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
+        if (other.gameObject.tag == "flame")
+        {
+            flameHit = true;
+        }
+
         if (ObjectPosL == true)
         {
             if (Page1 == true)
@@ -105,6 +110,11 @@ public class pageObj : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
+        if (other.gameObject.tag == "flame")
+        {
+            flameHit = false;
+        }
+
         if (ObjectPosL == true)
         {
             if (Page1 == true)
@@ -193,7 +203,7 @@ public class pageObj : MonoBehaviour
 
         if (flameHit == true)
         {
-            Obj.gameObject.SetActive(true);
+            Obj.gameObject.SetActive(false);
         }
 
         if (hit == true)
