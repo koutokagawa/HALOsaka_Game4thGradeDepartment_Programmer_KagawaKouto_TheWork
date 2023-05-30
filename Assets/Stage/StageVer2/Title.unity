@@ -10839,11 +10839,7 @@ Transform:
   m_Father: {fileID: 965723058}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -179.969, y: -90.291016, z: -180}
-<<<<<<< HEAD
---- !u!1 &2083045564
-=======
 --- !u!1 &2089530779
->>>>>>> origin/2023_0530_shinjo2
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

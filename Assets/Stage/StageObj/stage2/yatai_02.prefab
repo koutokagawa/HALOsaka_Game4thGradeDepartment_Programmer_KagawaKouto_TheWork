@@ -419,8 +419,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  Obj: {fileID: 3548755968882120965}
-  script: {fileID: 5047803320812993360}
+  ReObj: {fileID: 3548755968882120965}
+  script: {fileID: 0}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
@@ -441,8 +441,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  Obj: {fileID: 3548755968882120965}
-  script: {fileID: 5343584705081255335}
+  ReObj: {fileID: 3548755968882120965}
+  script: {fileID: 5047803320812993360}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0
@@ -463,8 +463,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 0}
-  Obj: {fileID: 0}
-  script: {fileID: 0}
+  ReObj: {fileID: 3548755968882120965}
+  script: {fileID: 5047803320812993360}
   ObjectPosL: 0
   ObjectPosR: 0
   Page1: 0

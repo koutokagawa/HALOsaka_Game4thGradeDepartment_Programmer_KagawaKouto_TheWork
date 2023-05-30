@@ -493,9 +493,9 @@ public class RayPlayer : MonoBehaviour
         return zSpeed;
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnCollisionStay(Collision other)
     {
-        if(other.collider.CompareTag("GoalObj"))
+        if(other.collider.CompareTag("GoalTag"))
         {
             animator.SetBool("B_Joy", true);
         }

@@ -3,12 +3,6 @@ using UnityEngine.InputSystem;
 
 public class SwitchAnimation : MonoBehaviour
 {
-<<<<<<< HEAD
-    [Header("切り離したい子オブジェクト")]          
-    public GameObject[] children;
-
-=======
->>>>>>> origin/2023_0530_shinjo2
     public GameObject scriptHolder; // 有効化したいスクリプトを持っているオブジェクト
 
 
