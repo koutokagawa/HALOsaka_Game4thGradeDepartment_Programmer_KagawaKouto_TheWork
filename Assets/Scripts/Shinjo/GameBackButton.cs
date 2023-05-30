@@ -17,7 +17,7 @@ public class GameBackButton : MonoBehaviour
 
     public void OnButtonClicked()
     {
-        //Time.timeScale = 1;
+        // Time.timeScale = 1;
         objectToDeactivate.SetActive(false);
 
         // オブジェクトの左右のScaleXOverTimeスクリプトを有効化して実行
