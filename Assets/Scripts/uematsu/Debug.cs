@@ -30,18 +30,18 @@ public class Debug : MonoBehaviour
         // F1と１ボタンを押すとシーンをロード
         if (Input.GetKey(KeyCode.F1) && Input.GetKey(KeyCode.Alpha1))
         {
-            SceneManager.LoadScene("stage1-1");
+            SceneManager.LoadScene("S2");
         }
 
         if (Input.GetKey(KeyCode.F1) && Input.GetKey(KeyCode.Alpha2))
         {
-            SceneManager.LoadScene("stage1-2");
+            SceneManager.LoadScene("S3");
         }
 
         // F1と2ボタンを押すとシーンをロード
         if (Input.GetKey(KeyCode.F2) && Input.GetKey(KeyCode.Alpha1))
         {
-            SceneManager.LoadScene("stage2-1");
+            SceneManager.LoadScene("S4");
         }
 
         // F1と3ボタンを押すとシーンをロード

@@ -13731,7 +13731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1218474006730064327, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.6
+      value: 7.27
       objectReference: {fileID: 0}
     - target: {fileID: 2237769023634188582, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: m_Name
@@ -13744,7 +13744,7 @@ PrefabInstance:
     - target: {fileID: 4335240492409264406, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: script
       value: 
-      objectReference: {fileID: 1999664969}
+      objectReference: {fileID: 0}
     - target: {fileID: 4335240492409264406, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: character
       value: 
@@ -13775,7 +13775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6831561413391555509, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.6
+      value: 7.27
       objectReference: {fileID: 0}
     - target: {fileID: 6966068448325614088, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13788,7 +13788,7 @@ PrefabInstance:
     - target: {fileID: 7827026754352911721, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: script
       value: 
-      objectReference: {fileID: 1999664969}
+      objectReference: {fileID: 0}
     - target: {fileID: 7827026754352911721, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: character
       value: 
@@ -13804,7 +13804,7 @@ PrefabInstance:
     - target: {fileID: 8969585415609205146, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: script
       value: 
-      objectReference: {fileID: 1999664969}
+      objectReference: {fileID: 0}
     - target: {fileID: 8969585415609205146, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: character
       value: 
@@ -14491,7 +14491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1218474006730064327, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.6
+      value: 7.27
       objectReference: {fileID: 0}
     - target: {fileID: 2237769023634188582, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: m_Name
@@ -14504,7 +14504,7 @@ PrefabInstance:
     - target: {fileID: 4335240492409264406, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: script
       value: 
-      objectReference: {fileID: 1954434173}
+      objectReference: {fileID: 0}
     - target: {fileID: 4335240492409264406, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: character
       value: 
@@ -14531,7 +14531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6831561413391555509, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.6
+      value: 7.27
       objectReference: {fileID: 0}
     - target: {fileID: 6966068448325614088, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14548,7 +14548,7 @@ PrefabInstance:
     - target: {fileID: 7827026754352911721, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: script
       value: 
-      objectReference: {fileID: 1954434173}
+      objectReference: {fileID: 0}
     - target: {fileID: 7827026754352911721, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: character
       value: 
@@ -14564,7 +14564,7 @@ PrefabInstance:
     - target: {fileID: 8969585415609205146, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: script
       value: 
-      objectReference: {fileID: 1954434173}
+      objectReference: {fileID: 0}
     - target: {fileID: 8969585415609205146, guid: 2d67fc37912b19449b1c38405768df8d, type: 3}
       propertyPath: character
       value: 
@@ -19871,6 +19871,7 @@ MonoBehaviour:
   targetScaleX: 3800
   duration: 1
   scaleUp: 1
+  targetScaleXDown: 0.0006428797
 --- !u!183 &1563386910
 Cloth:
   m_ObjectHideFlags: 0
@@ -20474,6 +20475,7 @@ MonoBehaviour:
   targetScaleX: 3800
   duration: 1
   scaleUp: 1
+  targetScaleXDown: 0.0006428797
 --- !u!137 &1691279133
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0

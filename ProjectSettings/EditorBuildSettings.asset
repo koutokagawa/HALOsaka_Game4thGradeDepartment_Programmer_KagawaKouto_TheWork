@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Stage/StageVer2/TitleMovie.unity
     guid: 0fd3e5eb7b9254648ac7efcdb8b5dacf
   - enabled: 1
@@ -26,49 +26,49 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Stage/StageVer2/stage2-1.unity
     guid: b15284f17ce11f640bf29ca6c13ff671
-  - enabled: 0
+  - enabled: 1
     path: Assets/Stage/StageVer2/stage2-2.unity
     guid: ddfb7433035458f48a44f2d0a9be158a
-  - enabled: 0
+  - enabled: 1
     path: Assets/Stage/StageVer2/stage2-3.unity
     guid: cc8835a918870f1458a2ea8064001fcb
-  - enabled: 0
+  - enabled: 1
     path: Assets/Stage/StageVer2/stage2-4.unity
     guid: e4b62a843db05b7488c265e7ab31dc06
   - enabled: 1
     path: Assets/Stage/StageVer2/stage3-1.unity
     guid: 5aa611cfa2c3fe14d9218bbaa1351152
-  - enabled: 0
+  - enabled: 1
     path: Assets/Stage/StageVer2/stage3-2.unity
     guid: ca86d0b1fad9ab241b70691a4ffc8d43
-  - enabled: 0
+  - enabled: 1
     path: Assets/Stage/StageVer2/stage3-3.unity
     guid: bedefa91f10170a488a8646e9c7a1413
-  - enabled: 0
+  - enabled: 1
     path: Assets/Stage/StageVer2/stage3-4.unity
     guid: a7f9782b79674b247b0a614dc280c249
   - enabled: 1
     path: Assets/Stage/StageVer2/stage4-1.unity
     guid: 12f18be9761e9b84eb3b1a49618598e7
-  - enabled: 0
+  - enabled: 1
     path: Assets/Stage/StageVer2/stage4-2.unity
     guid: e9fed95d935e1d54ead67c2a1881b05e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Stage/StageVer2/stage4-3.unity
     guid: ce7dad5c85b46e846b59439f9b9910b0
-  - enabled: 0
+  - enabled: 1
     path: Assets/Stage/StageVer2/stage4-4.unity
     guid: 8de1de0aa62d23b4a89bc641616c4f88
   - enabled: 1
     path: Assets/Stage/StageVer2/stage5-1.unity
     guid: 32b5a36c71d5b784eacb4736a1d0814c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Stage/StageVer2/stage5-2.unity
     guid: 8f39eeeae45696a4bb55d84e138f643e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Stage/StageVer2/stage5-3.unity
     guid: 254e8996738ed4647971bba58da0fa89
-  - enabled: 0
+  - enabled: 1
     path: Assets/Stage/StageVer2/stage5-4.unity
     guid: bd39d8d8966afce49a8951dd7f5c4ef7
   m_configObjects:
