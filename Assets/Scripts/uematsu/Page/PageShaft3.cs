@@ -57,7 +57,7 @@ public class PageShaft3 : MonoBehaviour
     void FixedUpdate()
     {
         // プレイヤーが地面にいるのか判定     falseなら地面にいる
-        if (character.GetComponent<RayPlayer2>().DownCheck == false && upChrck.GetComponent<PlayerUp>().MaxUp == false)
+        if (character.GetComponent<RayPlayer3>().DownCheck == false && upChrck.GetComponent<PlayerUp>().MaxUp == false)
         {
             RotationB();
         }
