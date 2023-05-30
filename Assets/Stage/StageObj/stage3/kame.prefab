@@ -431,6 +431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: kame_ob
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2fb5a824f092e714dbb3f108aef72cbb, type: 3}
+      propertyPath: m_TagString
+      value: moveobj
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fb5a824f092e714dbb3f108aef72cbb, type: 3}
 --- !u!4 &2676979689173717638 stripped
