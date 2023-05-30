@@ -5,7 +5,6 @@ public class GameBackButton : MonoBehaviour
 {
     public Button backButton;
     public GameObject objectToDeactivate;
-    public GameObject objectToActivate;
     public GameObject objectToScaleLeft;
     public GameObject objectToScaleRight;
 
@@ -41,7 +40,7 @@ public class GameBackButton : MonoBehaviour
 
         if (finishedScalingCount >= 2)
         {
-            objectToActivate.SetActive(true);
+            
         }
     }
 }

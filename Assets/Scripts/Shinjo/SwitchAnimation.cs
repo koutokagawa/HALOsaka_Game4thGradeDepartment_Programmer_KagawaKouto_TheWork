@@ -1,12 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-//using static Unity.VisualScripting.Metadata;
 
 public class SwitchAnimation : MonoBehaviour
 {
-    [Header("切り離したい子オブジェクト")]
-    public GameObject[] children;
-
     public GameObject scriptHolder; // 有効化したいスクリプトを持っているオブジェクト
 
 
@@ -25,16 +21,6 @@ public class SwitchAnimation : MonoBehaviour
             if (Gamepad.current.aButton.wasPressedThisFrame)
             {
                 animator.Play(forwardAnimation);
-                if (children != null)
-                {
-                    foreach (GameObject parent in children)
-                    {
-                        if (parent != null)
-                        {
-                            parent.transform.parent = this.transform;
-                        }
-                    }
-                }
             }
             // Bボタンが押されたときを検出します
             else if (Gamepad.current.bButton.wasPressedThisFrame)

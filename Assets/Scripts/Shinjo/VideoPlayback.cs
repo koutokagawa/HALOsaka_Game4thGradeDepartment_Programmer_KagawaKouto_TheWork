@@ -1,24 +1,21 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.Video;
 
 public class VideoPlayback : MonoBehaviour
 {
-    public VideoPlayer videoPlayer;  // VideoPlayer component
-    public GameObject objectToEnable;  // The 3D object to enable after video has finished
+    public VideoPlayer videoPlayer;  // ビデオプレイヤーコンポーネント
+    public GameObject scriptToobject;
 
     void Start()
     {
-        // Disable the object at start
-        objectToEnable.SetActive(false);
-
-        // Add listener for when the video finishes playing
+        // ビデオが終了したときに呼び出されるメソッドを登録します
         videoPlayer.loopPointReached += OnVideoFinished;
     }
 
+    // ビデオが終了したときに呼び出されるメソッド
     void OnVideoFinished(VideoPlayer vp)
     {
-        // Enable the object when the video has finished
-        objectToEnable.SetActive(true);
+        // Scriptを有効にします
+        scriptToobject.GetComponent<TriggerScaleAndCameraMove>().enabled = true;
     }
 }
