@@ -4935,6 +4935,11 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &46645525 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3345429554860836924, guid: 7f539b5d1800074429ed6e719a63382a, type: 3}
+  m_PrefabInstance: {fileID: 1611585906}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &47695710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6935,6 +6940,11 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 0
   m_Loop: 1
+--- !u!1 &633831744 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3345429554860836924, guid: 7f539b5d1800074429ed6e719a63382a, type: 3}
+  m_PrefabInstance: {fileID: 1798414117}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &638354745
 GameObject:
   m_ObjectHideFlags: 0
@@ -14911,6 +14921,7 @@ MonoBehaviour:
   targetScaleX: 3800
   duration: 1
   scaleUp: 1
+  targetScaleXDown: 0.0006428797
 --- !u!183 &1563386910
 Cloth:
   m_ObjectHideFlags: 0
@@ -15431,6 +15442,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7611121873563262875, guid: 7f539b5d1800074429ed6e719a63382a, type: 3}
+      propertyPath: Obj
+      value: 
+      objectReference: {fileID: 46645525}
+    - target: {fileID: 7611121873563262875, guid: 7f539b5d1800074429ed6e719a63382a, type: 3}
       propertyPath: Page1
       value: 1
       objectReference: {fileID: 0}
@@ -15667,6 +15682,7 @@ MonoBehaviour:
   targetScaleX: 3800
   duration: 1
   scaleUp: 1
+  targetScaleXDown: 0.0006428797
 --- !u!137 &1691279133
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -16361,6 +16377,10 @@ PrefabInstance:
       propertyPath: ObjectPosR
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7611121873563262875, guid: 7f539b5d1800074429ed6e719a63382a, type: 3}
+      propertyPath: Obj
+      value: 
+      objectReference: {fileID: 633831744}
     - target: {fileID: 7611121873563262875, guid: 7f539b5d1800074429ed6e719a63382a, type: 3}
       propertyPath: Page1
       value: 1
