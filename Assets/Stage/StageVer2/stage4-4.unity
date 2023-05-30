@@ -9561,31 +9561,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6065011829629869551, guid: 0de3716a278c9054ba415f679736fbd4, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6065011829629869551, guid: 0de3716a278c9054ba415f679736fbd4, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3115818
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6065011829629869551, guid: 0de3716a278c9054ba415f679736fbd4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3830229
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6065011829629869551, guid: 0de3716a278c9054ba415f679736fbd4, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.2626023
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6065011829629869551, guid: 0de3716a278c9054ba415f679736fbd4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.15347554
+      value: -0.49256843
       objectReference: {fileID: 0}
     - target: {fileID: 6065011829629869551, guid: 0de3716a278c9054ba415f679736fbd4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.6398015
+      value: 2.688617
       objectReference: {fileID: 0}
     - target: {fileID: 6065011829629869551, guid: 0de3716a278c9054ba415f679736fbd4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.015756186
+      value: -0.17424147
       objectReference: {fileID: 0}
     - target: {fileID: 6065011829629869551, guid: 0de3716a278c9054ba415f679736fbd4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20138,7 +20138,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 3addc507fd02bea48ad0318cfa2af024, type: 3}
 --- !u!4 &2055337217 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 6042869634497008388, guid: 3addc507fd02bea48ad0318cfa2af024, type: 3}
+  m_CorrespondingSourceObject: {fileID: 11694453143838690, guid: 3addc507fd02bea48ad0318cfa2af024, type: 3}
   m_PrefabInstance: {fileID: 2055337216}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2077207069
