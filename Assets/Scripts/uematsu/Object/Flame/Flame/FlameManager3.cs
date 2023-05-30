@@ -40,7 +40,7 @@ public class FlameManager3 : MonoBehaviour
                 {
                     if (other.gameObject.tag == "bookL2")
                     {
-                        Obj.gameObject.SetActive(true);
+                        Obj.gameObject.SetActive(false);
                         hit = true;
                     }
                 }
@@ -49,7 +49,7 @@ public class FlameManager3 : MonoBehaviour
                 {
                     if (other.gameObject.tag == "pagehit2_page1" || other.gameObject.tag == "bookL2")
                     {
-                        Obj.gameObject.SetActive(true);
+                        Obj.gameObject.SetActive(false);
                         hit = true;
                     }
                 }
@@ -58,7 +58,7 @@ public class FlameManager3 : MonoBehaviour
                 {
                     if (other.gameObject.tag == "pagehit2_page2" || other.gameObject.tag == "bookL2")
                     {
-                        Obj.gameObject.SetActive(true);
+                        Obj.gameObject.SetActive(false);
                         hit = true;
                     }
                 }
@@ -67,7 +67,7 @@ public class FlameManager3 : MonoBehaviour
                 {
                     if (other.gameObject.tag == "pagehit2_page3" || other.gameObject.tag == "bookL2")
                     {
-                        Obj.gameObject.SetActive(true);
+                        Obj.gameObject.SetActive(false);
                         hit = true;
                     }
                 }
@@ -79,7 +79,7 @@ public class FlameManager3 : MonoBehaviour
                 {
                     if (other.gameObject.tag == "pagehit2_page2" || other.gameObject.tag == "bookR2")
                     {
-                        Obj.gameObject.SetActive(true);
+                        Obj.gameObject.SetActive(false);
                         hit = true;
                     }
                 }
@@ -88,7 +88,7 @@ public class FlameManager3 : MonoBehaviour
                 {
                     if (other.gameObject.tag == "pagehit2_page3" || other.gameObject.tag == "bookR2")
                     {
-                        Obj.gameObject.SetActive(true);
+                        Obj.gameObject.SetActive(false);
                         hit = true;
                     }
                 }
@@ -97,7 +97,7 @@ public class FlameManager3 : MonoBehaviour
                 {
                     if (other.gameObject.tag == "pagehit2_page4" || other.gameObject.tag == "bookR2")
                     {
-                        Obj.gameObject.SetActive(true);
+                        Obj.gameObject.SetActive(false);
                         hit = true;
                     }
                 }
@@ -106,7 +106,7 @@ public class FlameManager3 : MonoBehaviour
                 {
                     if (other.gameObject.tag == "bookR2")
                     {
-                        Obj.gameObject.SetActive(true);
+                        Obj.gameObject.SetActive(false);
                         hit = true;
                     }
                 }

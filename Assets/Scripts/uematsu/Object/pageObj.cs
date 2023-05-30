@@ -101,11 +101,6 @@ public class pageObj : MonoBehaviour
                 }
             }
         }
-
-        if (other.gameObject.tag == "bookUnderHit")
-        {
-            Obj.gameObject.SetActive(false);
-        }
     }
 
     void OnTriggerExit(Collider other)
@@ -178,11 +173,6 @@ public class pageObj : MonoBehaviour
                     hit = false;
                 }
             }
-        }
-
-        if (other.gameObject.tag == "bookUnderHit")
-        {
-            Obj.gameObject.SetActive(false);
         }
     }
 

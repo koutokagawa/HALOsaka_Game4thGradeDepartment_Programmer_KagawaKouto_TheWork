@@ -57,7 +57,6 @@ public class ShaftManager3 : MonoBehaviour
         Shaft2.GetComponent<PageShaft3>().enabled = false;
         Shaft3.GetComponent<PageShaft3>().enabled = false;
 
-
         // オブジェクトの位置をobjと同じ位置にする
         Shaft1.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
         Shaft2.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
@@ -161,7 +160,7 @@ public class ShaftManager3 : MonoBehaviour
                     // ページ１
                     if (statebookL == 1 && statebookR == 2)
                     {
-                        if (pageMove2 == false && pageMove3)
+                        if (pageMove2 == false)
                         {
                             Page1Shaft_ON();
                         }
@@ -169,7 +168,7 @@ public class ShaftManager3 : MonoBehaviour
                     // ページ２
                     else if (statebookL == 2 && statebookR == 3)
                     {
-                        if (pageMove1 == false && pageMove3)
+                        if (pageMove1 == false)
                         {
                             Page2Shaft_ON();
                         }
@@ -177,7 +176,7 @@ public class ShaftManager3 : MonoBehaviour
                     // ページ３
                     else if (statebookL == 3 && statebookR == 4)
                     {
-                        if (pageMove1 == false && pageMove2)
+                        if (pageMove1 == false)
                         {
                             Page3Shaft_ON();
                         }
@@ -191,7 +190,7 @@ public class ShaftManager3 : MonoBehaviour
                     // ページ１
                     if (statebookL == 0 && statebookR == 1)
                     {
-                        if (pageMove2 == false && pageMove3)
+                        if (pageMove2 == false && pageMove3 == false)
                         {
                             Page1Shaft_ON();
                         }
@@ -199,7 +198,7 @@ public class ShaftManager3 : MonoBehaviour
                     // ページ２
                     else if (statebookL == 1 && statebookR == 2)
                     {
-                        if (pageMove1 == false && pageMove3)
+                        if (pageMove1 == false && pageMove3 == false)
                         {
                             Page2Shaft_ON();
                         }
@@ -207,7 +206,7 @@ public class ShaftManager3 : MonoBehaviour
                     // ページ３
                     else if (statebookL == 2 && statebookR == 3)
                     {
-                        if (pageMove1 == false && pageMove2)
+                        if (pageMove1 == false && pageMove2 == false)
                         {
                             Page3Shaft_ON();
                         }
