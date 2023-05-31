@@ -205,7 +205,7 @@ public class FlameManager2 : MonoBehaviour
 
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -219,14 +219,14 @@ public class FlameManager2 : MonoBehaviour
                 if (hit == false)
                 {
                     // âäÇ…ìñÇΩÇ¡ÇΩÇÁè¡Ç∑
-                    if (script.hit == true)
-                    {
-                        Destroy(Obj.gameObject);
-                    }
-                    else
-                    {
-                        Obj.gameObject.SetActive(true);
-                    }
+                    //if (script.hit == true)
+                    //{
+                    //    Destroy(Obj.gameObject);
+                    //}
+                    //else
+                    //{
+                    //    Obj.gameObject.SetActive(true);
+                    //}
 
                     var rb = Obj.GetComponent<Rigidbody>();
                     float RstickX = Input.GetAxis("RstickX");
