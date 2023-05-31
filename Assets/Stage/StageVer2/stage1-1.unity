@@ -7551,6 +7551,7 @@ GameObject:
   - component: {fileID: 723494753}
   - component: {fileID: 723494752}
   - component: {fileID: 723494751}
+  - component: {fileID: 723494756}
   m_Layer: 0
   m_Name: moveScreen (1)
   m_TagString: Untagged
@@ -7665,13 +7666,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723494750}
   m_LocalRotation: {x: -0, y: -0.8274834, z: 0.56149024, w: 0}
-  m_LocalPosition: {x: -0.72448814, y: 7.497739, z: -6.070685}
-  m_LocalScale: {x: 0.35820517, y: 0.16680118, z: 0.20813444}
+  m_LocalPosition: {x: -7.4415, y: 15.3285, z: -7.8494005}
+  m_LocalScale: {x: 0.9352059, y: 0.43548617, z: 0.5433997}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1158393875}
-  m_RootOrder: 3
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 68.318, y: -180, z: 0}
+--- !u!114 &723494756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723494750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ce180aa533db84998b9e83166ebd04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 1596575334}
+  Screen: {fileID: 723494750}
 --- !u!4 &728517587 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2419794326405438143, guid: c42bc2adf79ffbf49a2194f9d7f39b91, type: 3}
@@ -15189,11 +15204,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &1158393875 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2419794326705162672, guid: c42bc2adf79ffbf49a2194f9d7f39b91, type: 3}
-  m_PrefabInstance: {fileID: 1782984144}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1161792402 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3356028300368410188, guid: b5027b77b8186134e88bc67de314d6d7, type: 3}
@@ -22762,6 +22772,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   headcheck: {fileID: 0}
+--- !u!1 &1596575334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2419794326705162639, guid: c42bc2adf79ffbf49a2194f9d7f39b91, type: 3}
+  m_PrefabInstance: {fileID: 1782984144}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1616608197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23309,6 +23324,7 @@ GameObject:
   - component: {fileID: 1798806458}
   - component: {fileID: 1798806457}
   - component: {fileID: 1798806456}
+  - component: {fileID: 1798806461}
   m_Layer: 0
   m_Name: moveScreen
   m_TagString: Untagged
@@ -23423,13 +23439,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798806455}
   m_LocalRotation: {x: -0, y: -0.8274834, z: 0.56149024, w: 0}
-  m_LocalPosition: {x: -0.72448814, y: 7.497739, z: -6.070685}
-  m_LocalScale: {x: 0.35820517, y: 0.16680118, z: 0.20813444}
+  m_LocalPosition: {x: -7.4415, y: 15.3285, z: -7.8494005}
+  m_LocalScale: {x: 0.9352059, y: 0.43548617, z: 0.5433997}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1158393875}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 68.318, y: -180, z: 0}
+--- !u!114 &1798806461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798806455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ce180aa533db84998b9e83166ebd04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 1596575334}
+  Screen: {fileID: 1798806455}
 --- !u!1 &1819745015
 GameObject:
   m_ObjectHideFlags: 0

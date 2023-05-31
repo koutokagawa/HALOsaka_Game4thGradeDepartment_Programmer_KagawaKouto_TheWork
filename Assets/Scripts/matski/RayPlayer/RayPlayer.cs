@@ -16,7 +16,7 @@ public class RayPlayer : MonoBehaviour
     //上昇するときのターゲット
     [SerializeField] private GameObject UpTarget;
     [SerializeField] private GameObject StartObject;
-         [SerializeField] private bool GoalCheck=false;
+  
 
     Animator animator;
 
@@ -493,22 +493,20 @@ public class RayPlayer : MonoBehaviour
         {
             if (LstickY < 0)
             {
-                this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
                 PVector = Vector3.forward;
-                animator.SetBool("B_BackWalk", true);
+                this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+                animator.SetBool("B_RightWalk", true);
                 animator.SetBool("B_FrontIdle", false);
-                animator.SetBool("B_BackIdle", true);
-                animator.SetBool("B_FrontWalk", false);
+                animator.SetBool("B_BackIdle", false);
             }
             else if (LstickY > 0)
             {
-                this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+
                 PVector = Vector3.back;
-               
-                animator.SetBool("B_FrontWalk", true);
-                animator.SetBool("B_FrontIdle", true);
+                this.transform.rotation = Quaternion.Euler(0.0f, 180.0f, 0.0f);
+                animator.SetBool("B_RightWalk", true);
+                animator.SetBool("B_FrontIdle", false);
                 animator.SetBool("B_BackIdle", false);
-                animator.SetBool("B_BackWalk", false);
             }
             else
             {
@@ -524,7 +522,6 @@ public class RayPlayer : MonoBehaviour
         if(other.collider.CompareTag("GoalObj"))
         {
             animator.SetBool("B_Joy", true);
-            GoalCheck = true;
         }
 
     }
