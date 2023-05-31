@@ -24733,6 +24733,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: sango
       objectReference: {fileID: 0}
+    - target: {fileID: 8606672753720958792, guid: 3e3b34e63ac03f847a6776a36239fed4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.91
+      objectReference: {fileID: 0}
     - target: {fileID: 8950007120195583148, guid: 3e3b34e63ac03f847a6776a36239fed4, type: 3}
       propertyPath: Page2
       value: 1
