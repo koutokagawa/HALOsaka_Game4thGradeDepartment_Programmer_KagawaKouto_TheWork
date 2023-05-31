@@ -8,6 +8,11 @@ using UnityEngine;
 public class PageShaft : MonoBehaviour
 {
     public bool isUp;
+
+    public AudioSource ad;
+
+    private bool SE = false;
+
     #region//インスペクターで設定する
     [Header("pageを入れる")] public Pagehit hitcheck;
     [Header("headcheckを入れる")] public PlayerUp upChrck;
@@ -42,7 +47,7 @@ public class PageShaft : MonoBehaviour
             }
         }
 
-            if (Input.GetKeyDown("joystick button 4"))
+        if (Input.GetKeyDown("joystick button 4"))
         {
             checkL = true;
             checkR = false;
@@ -137,6 +142,21 @@ public class PageShaft : MonoBehaviour
     // 素早くめくる
     public void RotationB()
     {
+        if (hitcheck.GetComponent<Pagehit>().ishitL == false && hitcheck.GetComponent<Pagehit>().ishitR == false)
+        {
+            if (SE == true)
+            {
+                ad.Play();
+                SE = false;
+            }
+        }
+        else
+        {
+            SE = true;
+        }
+
+
+
         // 右スティックの倒す角度でページの回転速度を変える
         // 右にステックを倒した場合
         if (hitcheck.GetComponent<Pagehit>().ishitL == false)
