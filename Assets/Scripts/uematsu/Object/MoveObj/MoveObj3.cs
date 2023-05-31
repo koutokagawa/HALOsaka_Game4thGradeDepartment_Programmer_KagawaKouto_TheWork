@@ -152,7 +152,7 @@ public class MoveObj3 : MonoBehaviour
         }
         else
         {
-            Destroy(this.gameObject);
+           // Destroy(this.gameObject);
         }
     }
     
