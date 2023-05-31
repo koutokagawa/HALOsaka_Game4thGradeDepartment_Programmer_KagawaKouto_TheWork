@@ -4,6 +4,7 @@ using System.Diagnostics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem.XR.Haptics;
+using UnityEngine.SceneManagement;
 
 //using static UnityEditor.PlayerSettings;
 
@@ -368,6 +369,10 @@ public class RayPlayer2 : MonoBehaviour
             {
                 AnimPlay = false;
             }
+        }  //‰æ–Ê‘JˆÚ
+        if (AnimPlay == false)
+        {
+            SceneManager.LoadScene("Title");
         }
     }
 
