@@ -77,13 +77,13 @@ public class pageClearObj : MonoBehaviour
             }
         }
 
-        if (other.gameObject.tag == "bookUnderHit")
-        {
-            Obj.gameObject.SetActive(false);
+        //if (other.gameObject.tag == "bookUnderHit")
+        //{
+        //    Obj.gameObject.SetActive(false);
            
-        }
+        //}
 
-        if(other.gameObject.tag == "moveobj")
+        if(other.gameObject.tag == "moveobj"/*||other.gameObject.tag=="lockobj"*/)
         {
             hit = true;
         }
@@ -157,10 +157,10 @@ public class pageClearObj : MonoBehaviour
             }
         }
 
-        if (other.gameObject.tag == "bookUnderHit")
-        {
-            Obj.gameObject.SetActive(true);
-        }
+        //if (other.gameObject.tag == "bookUnderHit")
+        //{
+        //    Obj.gameObject.SetActive(true);
+        //}
 
         if (other.gameObject.tag == "moveobj" || other.gameObject.tag == "flame")
         {
