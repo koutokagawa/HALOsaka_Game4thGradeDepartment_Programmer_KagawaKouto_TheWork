@@ -4,7 +4,6 @@ using System.Diagnostics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem.XR.Haptics;
-using UnityEngine.SceneManagement;
 
 //using static UnityEditor.PlayerSettings;
 
@@ -176,8 +175,7 @@ public class RayPlayer3 : MonoBehaviour
                                 //オブジェクトの1番目の子オブジェクトを移動先にする
                                 objectname = hit.transform.GetChild(0);
                                 NowMoveflg = true;
-                                animator.SetBool("B_Run", true);
-                                animator.GetBool("B_Run");
+                          
                             }
                             if (hit.collider.CompareTag("Block_lar") || hit.collider.CompareTag("Uptag_lar"))
                             {
@@ -185,7 +183,7 @@ public class RayPlayer3 : MonoBehaviour
                                 {
                                     //オブジェクトの1番目の子オブジェクトを移動先にする
                                     objectname = hit.transform.GetChild(0);
-                                    animator.SetBool("B_Run", true);
+                               
                                     NowMoveflg = true;
                                 }
                             }
@@ -195,8 +193,7 @@ public class RayPlayer3 : MonoBehaviour
                                 {
                                     //オブジェクトの1番目の子オブジェクトを移動先にする
                                     objectname = hit.transform.GetChild(0);
-                                    animator.SetBool("B_Run", true);
-                                    NowMoveflg = true;
+                                  
                                 }
                             }
 
@@ -368,11 +365,6 @@ public class RayPlayer3 : MonoBehaviour
                 AnimPlay = false;
             }
         }
-        //画面遷移
-        if (AnimPlay == false)
-        {
-            SceneManager.LoadScene("Title");
-        }
     }
 
     private void FixedUpdate()
@@ -498,7 +490,7 @@ public class RayPlayer3 : MonoBehaviour
     }
     private void OnCollisionStay(Collision other)
     {
-        if (other.collider.CompareTag("GoalObj"))
+        if (other.collider.CompareTag("GoalTag"))
         {
             animator.SetBool("B_Joy", true);
         }
