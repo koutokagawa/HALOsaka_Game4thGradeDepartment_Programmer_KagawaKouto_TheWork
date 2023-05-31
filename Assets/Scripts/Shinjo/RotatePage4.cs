@@ -10,7 +10,6 @@ public class RotatePage4 : MonoBehaviour
     private const float rotationTime = 0.5f;
 
     public GameObject RotatePage3Object; // RotatePage3オブジェクトへの参照を追加
-    private bool isRotatePage3Enabled; // RotatePage3スクリプトの状態を追跡するためのブール変数を追加
 
     void Update()
     {
@@ -23,26 +22,14 @@ public class RotatePage4 : MonoBehaviour
 
         if (gamepad.dpad.right.wasPressedThisFrame)
         {
+            RotatePage3Object.GetComponent<RotatePage3>().enabled = false;
 
             StartCoroutine(RotateZOverTime(LeftRotationAngle, rotationTime));
         }
         else if (gamepad.dpad.left.wasPressedThisFrame)
         {
-            // スクリプトがRightRotationAngle = 8.1fの状態で左ボタンが押された場合、スクリプトを無効化
-            if (Mathf.Abs(transform.eulerAngles.z - RightRotationAngle) < 0.01f)
-            {
-                this.enabled = false;
-                return;
-            }
-
-            StartCoroutine(RotateZOverTime(RightRotationAngle, rotationTime));
-        }
-
-        // 8.1度のとき、RotatePage3スクリプトを有効化
-        if (!isRotatePage3Enabled && Mathf.Abs(transform.eulerAngles.z - RightRotationAngle) < 0.01f)
-        {
             RotatePage3Object.GetComponent<RotatePage3>().enabled = true;
-            isRotatePage3Enabled = true;
+            StartCoroutine(RotateZOverTime(RightRotationAngle, rotationTime));
         }
     }
 

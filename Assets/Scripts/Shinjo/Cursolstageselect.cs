@@ -60,6 +60,12 @@ public class Cursolstageselect : MonoBehaviour
 
         // 最初にすべてのスクリプトを無効化
         DisableAllScripts();
+
+        //stage1book.GetComponent<Animator>().enabled = false;
+        //stage2book.GetComponent<Animator>().enabled = false;
+        //stage3book.GetComponent<Animator>().enabled = false;
+        //stage4book.GetComponent<Animator>().enabled = false;
+        //stage5book.GetComponent<Animator>().enabled = false;
     }
 
     void Update()
