@@ -25,9 +25,11 @@ public class PageShaft : MonoBehaviour
     private bool checkL = false;
     private bool checkR = false;
 
+    public AudioSource audioSource; // オーディオソースコンポーネントを格納する変数
+    public AudioClip soundEffect; // 効果音ファイルを格納する変数
     void Start()
     {
-
+        audioSource = GetComponent<AudioSource>(); // オーディオソースコンポーネントを取得
     }
 
     void Update()
@@ -42,7 +44,7 @@ public class PageShaft : MonoBehaviour
             }
         }
 
-            if (Input.GetKeyDown("joystick button 4"))
+        if (Input.GetKeyDown("joystick button 4"))
         {
             checkL = true;
             checkR = false;
@@ -143,6 +145,7 @@ public class PageShaft : MonoBehaviour
         {
             if (checkR == true)
             {
+                audioSource.PlayOneShot(soundEffect);
                 rotation += 400.0f;
             }
         }

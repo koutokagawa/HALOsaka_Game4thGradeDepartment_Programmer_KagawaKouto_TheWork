@@ -31,10 +31,10 @@ public class Flame_SE : MonoBehaviour
                 PlaySoundEffect();
             }
 
-            else
-            {
-                Debug.Log("オブジェクトは非アクティブです");
-            }
+            // else
+            // {
+            //     Debug.Log("オブジェクトは非アクティブです");
+            //}
         }
     }
 
