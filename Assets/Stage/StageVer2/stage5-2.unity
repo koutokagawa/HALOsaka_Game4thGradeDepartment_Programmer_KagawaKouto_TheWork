@@ -5032,11 +5032,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28ac077617c3aa9439659144432431ab, type: 3}
---- !u!1 &70299431 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8391722943033150684, guid: 2f4c4ac5d2f7fd34490faae102786a9b, type: 3}
-  m_PrefabInstance: {fileID: 372758650}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &73099432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17976,7 +17971,6 @@ GameObject:
   - component: {fileID: 1381503711}
   - component: {fileID: 1381503709}
   - component: {fileID: 1381503708}
-  - component: {fileID: 1381503707}
   - component: {fileID: 1381503712}
   m_Layer: 0
   m_Name: playerUpTarget
@@ -17985,18 +17979,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1381503707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1381503706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801c01d1c7fb28e4fb83f2f4dbc7708d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1381503708
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26825,7 +26807,6 @@ GameObject:
   - component: {fileID: 2143411358}
   - component: {fileID: 2143411357}
   - component: {fileID: 2143411352}
-  - component: {fileID: 2143411361}
   m_Layer: 0
   m_Name: character
   m_TagString: Player
@@ -26951,35 +26932,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2143411361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2143411350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fa15a290a63d7f42952d55bdedfb15e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  RoteSpeed: 1200
-  Speed: 8
-  UpTarget: {fileID: 1381503706}
-  StartObject: {fileID: 70299431}
-  GoalCheck: 0
-  movetarget: {fileID: 0}
-  DownCheck: 0
-  UpCount: 0
-  PagePos: 0
-  page: {fileID: 1147444174}
-  gb: []
-  NowMoveflg: 0
-  character: {fileID: 1563115792}
-  col: {fileID: 2143411358}
-  Max: {fileID: 0}
-  gearStop: 0
 --- !u!1001 &2144671289
 PrefabInstance:
   m_ObjectHideFlags: 0
