@@ -7026,6 +7026,7 @@ GameObject:
   - component: {fileID: 748161711}
   - component: {fileID: 748161710}
   - component: {fileID: 748161709}
+  - component: {fileID: 748161714}
   m_Layer: 0
   m_Name: moveScreen
   m_TagString: Untagged
@@ -7147,6 +7148,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 68.318, y: -180, z: 0}
+--- !u!114 &748161714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748161708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ce180aa533db84998b9e83166ebd04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 1979222331}
+  Screen: {fileID: 748161708}
 --- !u!1001 &754911144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22473,6 +22488,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02b482ec3dc14184d95bc0ae9825f42b, type: 3}
+--- !u!1 &1979222331 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2419794326705162639, guid: c42bc2adf79ffbf49a2194f9d7f39b91, type: 3}
+  m_PrefabInstance: {fileID: 1011100991}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2024851474 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2419794326405438143, guid: c42bc2adf79ffbf49a2194f9d7f39b91, type: 3}
