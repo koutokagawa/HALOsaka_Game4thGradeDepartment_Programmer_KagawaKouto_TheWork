@@ -546,7 +546,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669ea9b0776b0ad45af03de20f474d08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: StageSelect
 --- !u!1001 &314072719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2821,12 +2820,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2069982346}
-        m_TargetAssemblyTypeName: FadeOutAndLoadScene, Assembly-CSharp
-        m_MethodName: OnButtonClick
-        m_Mode: 1
+        m_TargetAssemblyTypeName: EndButtonAction, Assembly-CSharp
+        m_MethodName: ButtonClicked
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 2069982343}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2879,9 +2878,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2069982341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 279722e0608617d4c8d25dd0e67609b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f0ce6e5e1e482249a82c86e130fa7c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelObject: {fileID: 84401058}
-  sceneToLoad: Title
-  fadeDuration: 1
