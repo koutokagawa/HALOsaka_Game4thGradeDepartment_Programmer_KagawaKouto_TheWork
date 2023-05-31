@@ -5440,7 +5440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5285162542694257531, guid: 3e3b34e63ac03f847a6776a36239fed4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5999994
+      value: -2.39
       objectReference: {fileID: 0}
     - target: {fileID: 5285162542694257531, guid: 3e3b34e63ac03f847a6776a36239fed4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -36836,9 +36836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669ea9b0776b0ad45af03de20f474d08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsToDeactivate: {fileID: 222670333}
-  stageSelectCube: {fileID: 0}
-  mainCamera: {fileID: 0}
+  sceneToLoad: 
 --- !u!114 &2000883398
 MonoBehaviour:
   m_ObjectHideFlags: 0

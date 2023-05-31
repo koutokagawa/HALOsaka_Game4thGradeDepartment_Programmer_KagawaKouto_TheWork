@@ -11100,6 +11100,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 314339896}
     m_Modifications:
+    - target: {fileID: 4702793896497297286, guid: 1ab835f43f0b9d14680699fa6c6b4742, type: 3}
+      propertyPath: SetBird
+      value: 
+      objectReference: {fileID: 363618698}
     - target: {fileID: 5100633739195048769, guid: 1ab835f43f0b9d14680699fa6c6b4742, type: 3}
       propertyPath: m_RootOrder
       value: 2
