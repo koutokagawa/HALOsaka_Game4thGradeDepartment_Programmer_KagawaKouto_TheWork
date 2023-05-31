@@ -372,7 +372,7 @@ public class RayPlayer2 : MonoBehaviour
         }  //‰æ–Ê‘JˆÚ
         if (AnimPlay == false)
         {
-            SceneManager.LoadScene("Title");
+            SceneManager.LoadScene("ClearScene");
         }
     }
 
