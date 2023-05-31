@@ -21,7 +21,7 @@ public class RayPlayer2 : MonoBehaviour
     //上昇するときのターゲット
     [SerializeField] private GameObject UpTarget;
     [SerializeField] private GameObject StartObject;
-
+    [SerializeField] private bool GoalCheck=false;
     Animator animator;
 
     #region//プライベート変数 
@@ -410,9 +410,20 @@ public class RayPlayer2 : MonoBehaviour
                 {
                     NowMoveflg = false;
 
-                  
-                    animator.SetBool("B_Run", false);
-                    animator.GetBool("B_Run");
+
+
+                    if (animator.GetBool("B_RightWalk") == true)
+                    {
+                        animator.SetBool("B_RightWalk", false);
+                    }
+                    if (animator.GetBool("B_BackWalk") == true)
+                    {
+                        animator.SetBool("B_BackWalk", false);
+                    }
+                    if (animator.GetBool("B_FrontWalk") == true)
+                    {
+                        animator.SetBool("B_FrontWalk", false);
+                    }
                     present_Location = 0.0f;
                     distance_two = 0.0f;
                 }
@@ -443,13 +454,17 @@ public class RayPlayer2 : MonoBehaviour
             {
                 PVector = Vector3.right;
                 this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
-
+                animator.SetBool("B_RightWalk", true);
+                animator.SetBool("B_FrontIdle", false);
+                animator.SetBool("B_BackIdle", false);
             }
             else if (LstickX < 0)
             {
 
                 this.transform.rotation = Quaternion.Euler(0.0f, 180.0f, 0.0f);
-
+                animator.SetBool("B_RightWalk", true);
+                animator.SetBool("B_FrontIdle", false);
+                animator.SetBool("B_BackIdle", false);
                 PVector = Vector3.left;
 
 
@@ -480,14 +495,20 @@ public class RayPlayer2 : MonoBehaviour
             {
                 this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
                 PVector = Vector3.forward;
-
+                animator.SetBool("B_BackWalk", true);
+                animator.SetBool("B_FrontIdle", false);
+                animator.SetBool("B_BackIdle", true);
+                animator.SetBool("B_FrontWalk", false);
             }
             else if (LstickY > 0)
             {
                 this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
                 PVector = Vector3.back;
 
-
+                animator.SetBool("B_FrontWalk", true);
+                animator.SetBool("B_FrontIdle", true);
+                animator.SetBool("B_BackIdle", false);
+                animator.SetBool("B_BackWalk", false);
             }
             else
             {
@@ -502,7 +523,7 @@ public class RayPlayer2 : MonoBehaviour
     {
         if (other.collider.CompareTag("GoalObj"))
         {
-
+            GoalCheck = true;
             animator.SetBool("B_Joy", true);
         }
 

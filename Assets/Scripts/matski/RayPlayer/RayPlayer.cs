@@ -16,6 +16,7 @@ public class RayPlayer : MonoBehaviour
     //上昇するときのターゲット
     [SerializeField] private GameObject UpTarget;
     [SerializeField] private GameObject StartObject;
+         [SerializeField] private bool GoalCheck=false;
 
     Animator animator;
 
@@ -523,6 +524,7 @@ public class RayPlayer : MonoBehaviour
         if(other.collider.CompareTag("GoalObj"))
         {
             animator.SetBool("B_Joy", true);
+            GoalCheck = true;
         }
 
     }

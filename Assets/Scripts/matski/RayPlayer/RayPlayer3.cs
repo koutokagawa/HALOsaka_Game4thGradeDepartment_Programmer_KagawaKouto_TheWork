@@ -176,8 +176,7 @@ public class RayPlayer3 : MonoBehaviour
                                 //オブジェクトの1番目の子オブジェクトを移動先にする
                                 objectname = hit.transform.GetChild(0);
                                 NowMoveflg = true;
-                                animator.SetBool("B_Run", true);
-                                animator.GetBool("B_Run");
+                  
                             }
                             if (hit.collider.CompareTag("Block_lar") || hit.collider.CompareTag("Uptag_lar"))
                             {
@@ -185,7 +184,7 @@ public class RayPlayer3 : MonoBehaviour
                                 {
                                     //オブジェクトの1番目の子オブジェクトを移動先にする
                                     objectname = hit.transform.GetChild(0);
-                                    animator.SetBool("B_Run", true);
+                                 
                                     NowMoveflg = true;
                                 }
                             }
@@ -195,7 +194,7 @@ public class RayPlayer3 : MonoBehaviour
                                 {
                                     //オブジェクトの1番目の子オブジェクトを移動先にする
                                     objectname = hit.transform.GetChild(0);
-                                    animator.SetBool("B_Run", true);
+                      
                                     NowMoveflg = true;
                                 }
                             }
@@ -409,9 +408,18 @@ public class RayPlayer3 : MonoBehaviour
                 {
                     NowMoveflg = false;
 
-                  
-                    animator.SetBool("B_Run", false);
-                    animator.GetBool("B_Run");
+                    if (animator.GetBool("B_RightWalk") == true)
+                    {
+                        animator.SetBool("B_RightWalk", false);
+                    }
+                    if (animator.GetBool("B_BackWalk") == true)
+                    {
+                        animator.SetBool("B_BackWalk", false);
+                    }
+                    if (animator.GetBool("B_FrontWalk") == true)
+                    {
+                        animator.SetBool("B_FrontWalk", false);
+                    }
                     present_Location = 0.0f;
                     distance_two = 0.0f;
                 }
@@ -442,13 +450,17 @@ public class RayPlayer3 : MonoBehaviour
             {
                 PVector = Vector3.right;
                 this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
-
+                animator.SetBool("B_RightWalk", true);
+                animator.SetBool("B_FrontIdle", false);
+                animator.SetBool("B_BackIdle", false);
             }
             else if (LstickX < 0)
             {
 
                 this.transform.rotation = Quaternion.Euler(0.0f, 180.0f, 0.0f);
-
+                animator.SetBool("B_RightWalk", true);
+                animator.SetBool("B_FrontIdle", false);
+                animator.SetBool("B_BackIdle", false);
                 PVector = Vector3.left;
 
 
@@ -479,14 +491,20 @@ public class RayPlayer3 : MonoBehaviour
             {
                 this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
                 PVector = Vector3.forward;
-
+                animator.SetBool("B_BackWalk", true);
+                animator.SetBool("B_FrontIdle", false);
+                animator.SetBool("B_BackIdle", true);
+                animator.SetBool("B_FrontWalk", false);
             }
             else if (LstickY > 0)
             {
                 this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
                 PVector = Vector3.back;
 
-
+                animator.SetBool("B_FrontWalk", true);
+                animator.SetBool("B_FrontIdle", true);
+                animator.SetBool("B_BackIdle", false);
+                animator.SetBool("B_BackWalk", false);
             }
             else
             {
