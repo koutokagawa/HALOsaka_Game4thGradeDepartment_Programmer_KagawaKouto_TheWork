@@ -416,14 +416,7 @@ public class RayPlayer2 : MonoBehaviour
                     {
                         animator.SetBool("B_RightWalk", false);
                     }
-                    if (animator.GetBool("B_BackWalk") == true)
-                    {
-                        animator.SetBool("B_BackWalk", false);
-                    }
-                    if (animator.GetBool("B_FrontWalk") == true)
-                    {
-                        animator.SetBool("B_FrontWalk", false);
-                    }
+                   
                     present_Location = 0.0f;
                     distance_two = 0.0f;
                 }
@@ -493,22 +486,20 @@ public class RayPlayer2 : MonoBehaviour
         {
             if (LstickY < 0)
             {
-                this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
                 PVector = Vector3.forward;
-                animator.SetBool("B_BackWalk", true);
+                this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+                animator.SetBool("B_RightWalk", true);
                 animator.SetBool("B_FrontIdle", false);
-                animator.SetBool("B_BackIdle", true);
-                animator.SetBool("B_FrontWalk", false);
+                animator.SetBool("B_BackIdle", false);
             }
             else if (LstickY > 0)
             {
-                this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+        
                 PVector = Vector3.back;
-
-                animator.SetBool("B_FrontWalk", true);
-                animator.SetBool("B_FrontIdle", true);
+                this.transform.rotation = Quaternion.Euler(0.0f, 180.0f, 0.0f);
+                animator.SetBool("B_RightWalk", true);
+                animator.SetBool("B_FrontIdle", false);
                 animator.SetBool("B_BackIdle", false);
-                animator.SetBool("B_BackWalk", false);
             }
             else
             {

@@ -496,22 +496,20 @@ public class RayPlayer4 : MonoBehaviour
         {
             if (LstickY < 0)
             {
-                this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
                 PVector = Vector3.forward;
-                animator.SetBool("B_BackWalk", true);
+                this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+                animator.SetBool("B_RightWalk", true);
                 animator.SetBool("B_FrontIdle", false);
-                animator.SetBool("B_BackIdle", true);
-                animator.SetBool("B_FrontWalk", false);
+                animator.SetBool("B_BackIdle", false);
             }
             else if (LstickY > 0)
             {
-                this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
-                PVector = Vector3.back;
-                animator.SetBool("B_FrontWalk", true);
-                animator.SetBool("B_FrontIdle", true);
-                animator.SetBool("B_BackIdle", false);
-                animator.SetBool("B_BackWalk", false);
 
+                PVector = Vector3.back;
+                this.transform.rotation = Quaternion.Euler(0.0f, 180.0f, 0.0f);
+                animator.SetBool("B_RightWalk", true);
+                animator.SetBool("B_FrontIdle", false);
+                animator.SetBool("B_BackIdle", false);
             }
             else
             {
