@@ -5,12 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class StageSelect : MonoBehaviour
 {
-
-    public string sceneToLoad;
-
     public void ButtonClicked(UnityEngine.UI.Button button)
     {
-        SceneManager.LoadScene(sceneToLoad);
+        SceneManager.LoadScene("StageSelect");
     }
 
 }
