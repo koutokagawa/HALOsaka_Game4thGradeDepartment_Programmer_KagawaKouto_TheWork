@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Stage/StageVer2/TitleMovie.unity
-    guid: 0fd3e5eb7b9254648ac7efcdb8b5dacf
   - enabled: 1
     path: Assets/Stage/StageVer2/Title.unity
     guid: 88ebedfbaf816724caafce88a9e5ee28
@@ -40,7 +37,7 @@ EditorBuildSettings:
     guid: 5aa611cfa2c3fe14d9218bbaa1351152
   - enabled: 1
     path: Assets/Stage/StageVer2/stage3-2.unity
-    guid: ca86d0b1fad9ab241b70691a4ffc8d43
+    guid: 4d54272227e133b428489347902aed3a
   - enabled: 1
     path: Assets/Stage/StageVer2/stage3-3.unity
     guid: bedefa91f10170a488a8646e9c7a1413
