@@ -324,23 +324,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c36bc417158b708439b80f0ba1b2b7d1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0417f7a92c1235c48a3306c931b42113, type: 3}
---- !u!1 &16055837 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0417f7a92c1235c48a3306c931b42113, type: 3}
-  m_PrefabInstance: {fileID: 16055836}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &16055838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16055837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb487d4d95937d94f9f0030c78129774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &84401058
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,6 +412,7 @@ GameObject:
   - component: {fileID: 99421784}
   - component: {fileID: 99421783}
   - component: {fileID: 99421782}
+  - component: {fileID: 99421785}
   m_Layer: 5
   m_Name: StageSelectButton
   m_TagString: Untagged
@@ -500,13 +484,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 99421785}
+        m_TargetAssemblyTypeName: StageSelect, Assembly-CSharp
+        m_MethodName: ButtonClicked
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: 99421782}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -550,6 +534,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99421780}
   m_CullTransparentMesh: 1
+--- !u!114 &99421785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99421780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 669ea9b0776b0ad45af03de20f474d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: StageSelect
 --- !u!1001 &314072719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1248,23 +1245,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c36bc417158b708439b80f0ba1b2b7d1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0417f7a92c1235c48a3306c931b42113, type: 3}
---- !u!1 &963135530 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0417f7a92c1235c48a3306c931b42113, type: 3}
-  m_PrefabInstance: {fileID: 963135529}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &963135531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963135530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb487d4d95937d94f9f0030c78129774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1060580751
 GameObject:
   m_ObjectHideFlags: 0
@@ -1516,8 +1496,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1207959231}
-  - component: {fileID: 1207959230}
-  - component: {fileID: 1207959229}
   m_Layer: 0
   m_Name: cuartainList
   m_TagString: Untagged
@@ -1525,34 +1503,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1207959229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207959228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb487d4d95937d94f9f0030c78129774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1207959230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207959228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 012c329dbd9a26b4e8f98fb6e08ac4c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 0}
-  objectsToDeactivate: {fileID: 0}
-  objectToScaleLeft: {fileID: 314072720}
-  objectToScaleRight: {fileID: 1539064617}
 --- !u!4 &1207959231
 Transform:
   m_ObjectHideFlags: 0
@@ -2295,23 +2245,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c36bc417158b708439b80f0ba1b2b7d1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0417f7a92c1235c48a3306c931b42113, type: 3}
---- !u!1 &1777612206 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0417f7a92c1235c48a3306c931b42113, type: 3}
-  m_PrefabInstance: {fileID: 1777612205}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1777612207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777612206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb487d4d95937d94f9f0030c78129774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1916502988
 PrefabInstance:
   m_ObjectHideFlags: 0
