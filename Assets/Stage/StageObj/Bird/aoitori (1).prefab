@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 1277694726880030627}
   - component: {fileID: 4260286130008808265}
   - component: {fileID: 2074427329090688936}
+  - component: {fileID: 3457787366266419234}
   m_Layer: 0
   m_Name: aoitori (1)
   m_TagString: Untagged
@@ -127,7 +128,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941218811011314969}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2220e10f07708d74d95e6f64cdd6b603, type: 3}
   m_Name: 
@@ -144,7 +145,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5df1b829498d0724cb36fcd97b21fa28, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -230,6 +231,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3457787366266419234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941218811011314969}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7352f0b2edb5b847a3872e7881ba9df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ad: {fileID: 2074427329090688936}
 --- !u!1 &4310761084362871317
 GameObject:
   m_ObjectHideFlags: 0
