@@ -173,8 +173,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.4530334, y: 4.749574, z: 3.6051455}
-  m_Center: {x: -0.10674667, y: -0.41439843, z: -0.05931139}
+  m_Size: {x: 3.4530334, y: 5.158431, z: 3.6051455}
+  m_Center: {x: -0.10674667, y: -0.6188264, z: -0.05931139}
 --- !u!114 &1178082679862064488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 943852507596103409}
   m_Layer: 0
   m_Name: RayHitObjTopUnder
-  m_TagString: Block_lar
+  m_TagString: block_XL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
