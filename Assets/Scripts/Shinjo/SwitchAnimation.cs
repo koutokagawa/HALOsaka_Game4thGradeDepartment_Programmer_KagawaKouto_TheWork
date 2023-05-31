@@ -11,6 +11,8 @@ public class SwitchAnimation : MonoBehaviour
     public GameObject StageSelectCube; // 有効化したいスクリプトを持っているオブジェクト
     public GameObject ScriptToDeactivate; // 無効化したいスクリプトを持っているオブジェクト
     public GameObject RotatePage2; // 無効化したいスクリプトを持っているオブジェクト
+    public GameObject RotatePage3; // 無効化したいスクリプトを持っているオブジェクト
+    public GameObject RotatePage4; // 無効化したいスクリプトを持っているオブジェクト
 
     public Animator animator;  // Animatorコントローラーの参照
     public string forwardAnimation = "AnimationName";  // 順再生アニメーションの名前
@@ -58,8 +60,11 @@ public class SwitchAnimation : MonoBehaviour
             // Bボタンが押されたときを検出します
             else if (Gamepad.current.bButton.wasPressedThisFrame)
             {
+
                 ScriptToDeactivate.GetComponent<SceneController>().enabled = false;
                 RotatePage2.GetComponent<RotatePage2>().enabled = false;
+                RotatePage3.GetComponent<RotatePage3>().enabled = false;
+                RotatePage4.GetComponent<RotatePage4>().enabled = false;
 
                 // スクリプトを有効にする
                 var script = scriptHolder.GetComponent<Parents>(); // <MonoBehaviour>には有効化したいスクリプトの型を入力します

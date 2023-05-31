@@ -10,6 +10,9 @@ public class TriggerScaleAndCameraMove : MonoBehaviour
     public GameObject objectToScaleRight;
     [SerializeField] private GameObject stageSelectCube;
 
+    public AudioSource ad;
+
+    private float count;
 
     private int finishedScalingCount = 0;
 
@@ -27,6 +30,9 @@ public class TriggerScaleAndCameraMove : MonoBehaviour
         // Aボタンが押されたら、ScaleXOverTimeのBeginScalingを呼び出し、スケーリングを開始し、カメラを移動する
         if (Gamepad.current.aButton.wasPressedThisFrame)
         {
+            ad.Play();
+
+
             objectToDeactivate.SetActive(false);
 
             // オブジェクトの左右のScaleXOverTimeスクリプトを有効化して実行
@@ -42,8 +48,19 @@ public class TriggerScaleAndCameraMove : MonoBehaviour
         Vector3 startPosition = camera.transform.position; // 開始位置
         float startTime = Time.time; // 開始時間
 
+
+
         while (Time.time < startTime + duration)
         {
+            count += Time.deltaTime; // 経過時間を計算
+
+            // 経過時間が過ぎたらリセット
+            if (count > 2.0f)
+            {
+                ad.Stop();
+
+            }
+
             float t = (Time.time - startTime) / duration;
             camera.transform.position = Vector3.Lerp(startPosition, newPosition, t);
             yield return null;

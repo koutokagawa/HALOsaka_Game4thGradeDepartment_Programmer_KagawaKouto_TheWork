@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Stage/StageVer2/Title.unity
     guid: 88ebedfbaf816724caafce88a9e5ee28
   - enabled: 1
+    path: Assets/Stage/StageVer2/StageSelect.unity
+    guid: 50f0845540b409242940cd85b031ac3e
+  - enabled: 1
     path: Assets/Stage/StageVer2/stage1-1.unity
     guid: 5e32e30c384415243ade0231405968e3
   - enabled: 1
@@ -35,9 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Stage/StageVer2/stage3-1.unity
     guid: 5aa611cfa2c3fe14d9218bbaa1351152
-  - enabled: 1
-    path: Assets/Stage/StageVer2/stage3-2.unity
-    guid: 4d54272227e133b428489347902aed3a
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Stage/StageVer2/stage3-3.unity
     guid: bedefa91f10170a488a8646e9c7a1413
@@ -68,5 +71,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Stage/StageVer2/stage5-4.unity
     guid: bd39d8d8966afce49a8951dd7f5c4ef7
+  - enabled: 1
+    path: Assets/Stage/StageVer2/ClearScene.unity
+    guid: 4ffa74adb6e0f9d4084a0bc158990ef2
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: e3f578e6dc0624f4caa443f6a42e69e1, type: 2}
