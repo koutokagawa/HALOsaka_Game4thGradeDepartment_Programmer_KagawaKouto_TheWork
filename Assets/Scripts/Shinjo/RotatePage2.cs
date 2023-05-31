@@ -10,7 +10,6 @@ public class RotatePage2 : MonoBehaviour
     private const float rotationTime = 0.5f;          // 回転にかかる時間
 
     public GameObject RotatePage3Object;  // RotatePage3オブジェクトへの参照
-    private bool isRotatePage3Enabled;    // RotatePage3スクリプトの状態を追跡するためのブール変数
 
     void Update()
     {
@@ -23,31 +22,13 @@ public class RotatePage2 : MonoBehaviour
 
         if (gamepad.dpad.right.wasPressedThisFrame)
         {
-            if (Mathf.Abs(transform.eulerAngles.z - LeftRotationAngle) < 0.01f)
-            {
-                this.enabled = false;
-                return;
-            }
-
             StartCoroutine(RotateZOverTime(LeftRotationAngle, rotationTime));
+            RotatePage3Object.GetComponent<RotatePage3>().enabled = true;
         }
         else if (gamepad.dpad.left.wasPressedThisFrame)
         {
-            if (Mathf.Abs(transform.eulerAngles.z - RightRotationAngle) < 0.01f)
-            {
-                RotatePage3Object.GetComponent<RotatePage3>().enabled = false;
-                isRotatePage3Enabled = false;
-                return;
-            }
-
+            RotatePage3Object.GetComponent<RotatePage3>().enabled = false;
             StartCoroutine(RotateZOverTime(RightRotationAngle, rotationTime));
-        }
-
-        // 176.55度になったら、RotatePage3スクリプトを有効にする
-        if (!isRotatePage3Enabled && Mathf.Abs(transform.eulerAngles.z - LeftRotationAngle) < 0.01f)
-        {
-            RotatePage3Object.GetComponent<RotatePage3>().enabled = true;
-            isRotatePage3Enabled = true;
         }
     }
 

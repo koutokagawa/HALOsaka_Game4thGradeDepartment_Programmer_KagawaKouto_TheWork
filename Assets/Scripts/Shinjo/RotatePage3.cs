@@ -10,10 +10,8 @@ public class RotatePage3 : MonoBehaviour
     private const float rotationTime = 0.5f;
 
     public GameObject RotatePage2Object;
-    private bool isRotatePage2Enabled;
 
     public GameObject RotatePage4Object;
-    private bool isRotatePage4Enabled;
 
     void Update()
     {
@@ -26,58 +24,16 @@ public class RotatePage3 : MonoBehaviour
 
         if (gamepad.dpad.right.wasPressedThisFrame)
         {
-            // スクリプトがLeftRotationAngle = 176.28fの状態で右ボタンが押された場合、RotatePage3スクリプトを無効化
-            if (Mathf.Abs(transform.eulerAngles.z - LeftRotationAngle) < 0.01f)
-            {
-                this.enabled = false;
-                return;
-            }
-
+            RotatePage2Object.GetComponent<RotatePage2>().enabled = false;
+            RotatePage4Object.GetComponent<RotatePage4>().enabled = true;
             StartCoroutine(RotateZOverTime(LeftRotationAngle, rotationTime));
-
-            // 右ボタンが押されたときにRotatePage2スクリプトを無効化
-            if (isRotatePage2Enabled)
-            {
-                RotatePage2Object.GetComponent<RotatePage2>().enabled = false;
-                isRotatePage2Enabled = false;
-            }
         }
         else if (gamepad.dpad.left.wasPressedThisFrame)
         {
-            // スクリプトがRightRotationAngle = 8fの状態で右ボタンが押された場合、RotatePage3スクリプトを無効化
-            if (Mathf.Abs(transform.eulerAngles.z - RightRotationAngle) < 0.01f)
-            {
-                this.enabled = false;
-                return;
-            }
 
-
-            StartCoroutine(RotateZOverTime(RightRotationAngle, rotationTime));
-
-            // スクリプトがLeftRotationAngle = 176.28fの状態で左ボタンが押された場合、RotatePage4スクリプトを無効化
-            if (Mathf.Abs(transform.eulerAngles.z - LeftRotationAngle) < 0.01f)
-            {
-                this.enabled = false;
-
-                RotatePage4Object.GetComponent<RotatePage4>().enabled = false;
-                isRotatePage4Enabled = false;
-                return;
-            }
-
-        }
-
-        // 8度のとき、RotatePage2スクリプトを有効化
-        if (!isRotatePage2Enabled && Mathf.Abs(transform.eulerAngles.z - RightRotationAngle) < 0.01f)
-        {
+            RotatePage4Object.GetComponent<RotatePage4>().enabled = false;
             RotatePage2Object.GetComponent<RotatePage2>().enabled = true;
-            isRotatePage2Enabled = true;
-        }
-
-        // 176.28度のとき、RotatePage4スクリプトを有効化
-        if (!isRotatePage4Enabled && Mathf.Abs(transform.eulerAngles.z - LeftRotationAngle) < 0.01f)
-        {
-            RotatePage4Object.GetComponent<RotatePage4>().enabled = true;
-            isRotatePage4Enabled = true;
+            StartCoroutine(RotateZOverTime(RightRotationAngle, rotationTime));
         }
     }
 

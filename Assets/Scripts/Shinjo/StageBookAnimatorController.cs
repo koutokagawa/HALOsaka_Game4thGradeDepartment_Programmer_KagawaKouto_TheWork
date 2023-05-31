@@ -12,7 +12,6 @@ public class StageBookAnimatorController : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-
         if (animator != null)
         {
             if (animator.runtimeAnimatorController != null &&
